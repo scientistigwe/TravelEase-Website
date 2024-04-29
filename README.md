@@ -13,14 +13,14 @@
   <a href="https://codeinstitute.net/?nab=0">
     <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" align="left" alt="Project Logo" width="80" height="80">
           <a href="https://scientistigwe.github.io/TravelEase-Website/">
-    <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" align="right" alt="Project Logo" width="80" height="80">
+    <img src="./assets/images/image-removebg-preview.png" align="right" alt="Project Logo" width="80" height="80">
     </div>
   </a>
   <br>
   <br>
   <br>
 
-  <h1 align="center">PROJECT TITLE</h1>
+  <h1 align="center">TravelEase</h1>
 
   <p align="center">
     A README template that can be adapted to suite your projects!
