@@ -28,7 +28,7 @@
     (Replace with a short intro sentence about your project).
     <br />
     <br />
-    <a href="https://github.com/path-to-readme-file"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/scientistigwe/TravelEase-Website/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
 
@@ -108,7 +108,7 @@ This section contains summary information about the project, the user expections
 
 <h2 id="about-the-project">About The Project</h2>
 
-<p align="center"><a href="https://path-to-deployed-site.com">"**name-of-project**"</a></p>
+<p align="center"><a href="https://scientistigwe.github.io/TravelEase-Website/">TravelEase Homepage</a></p>
 
 <a href="https://github.com/scientistigwe/README-Template">
 <img src="./assets/images/screenshot.png" alt="Product Screenshot" width="600" height="600">
@@ -116,16 +116,16 @@ This section contains summary information about the project, the user expections
 
 <h2 id="ux">User Experience (UX)</h2>
 
-"**name-of-project**" is a software designed to provide abc services.
+TravelEase is a one-stop solution for adventurers, explorers and lovers of nature. It was painstakely designed to do all the hardstuff and erase all gray areas around tourism planning and implementation. We do this so that you can do more fun things.
 
-The uniqueness of this project are:
+Some of the unique features of this project are:
 
-- abc
-- xyz
-- 123
-- etc
+- User friendly landing page.
+- Clear navigation items and call to action buttons at strategic locations
+- Ai-powered travel planner and up-to-date travel time.
+- A gallery of hot tourist destination sites to keep users busy and desiring.
 
-You can view the deployed website [here](https://path-to-deployed-site.com)
+Click the link to visit the site: [TravelEase Website](https://scientistigwe.github.io/TravelEase-Website/)
 
 <h2 id="user-stories">User Stories</h2>
 
@@ -135,7 +135,7 @@ You can view the deployed website [here](https://path-to-deployed-site.com)
 - As a new user of this website, I want to see.......
 - As a new user of this website, I want to see.......
 - As a new user of this website, I want to easily find.......
-- As a new user to this website, I want to meet the team
+- As a new user to this website, I want to meet the team.....
 - As a user, I want to follow xyz on social media.......
 - etc
 

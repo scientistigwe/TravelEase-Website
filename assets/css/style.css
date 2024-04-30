@@ -20,12 +20,16 @@ html,body{
 
 .header-section {
     width: 100vw;
-    height: 700px;
+    min-height: 700px;
     position: absolute;
     background-position: center;
     overflow: hidden;
     z-index: -99;
     animation: slideBackground 100s infinite;
+}
+
+#header-section{
+    min-height: 700px;
 }
 
 @keyframes slideBackground {
