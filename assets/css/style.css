@@ -3,7 +3,14 @@
 
 
 /* General style */
+*{
+    margin: 0;
+    padding: 0;
+}
 
+html,body{
+    width: 100vw;
+}
 
 /*****
 ** HOMEPAGE **
@@ -11,6 +18,38 @@
 
 /* Header */
 
+.header-section {
+    width: 100vw;
+    min-height: 700px;
+    position: absolute;
+    background-position: center;
+    overflow: hidden;
+    z-index: -99;
+    animation: slideBackground 100s infinite;
+}
+
+#header-section{
+    min-height: 700px;
+}
+
+@keyframes slideBackground {
+    0% {
+        background-image: url("/assets/images/sky2.jpg");
+    }
+    33.33% {
+        background-image: url("/assets/images/sky.jpg");
+    }
+    66.66% {
+        background-image: url("/assets/images/sky3.jpg");
+    }
+    100% {
+        background-image: url("/assets/images/sky2.jpg");
+    }
+}
+
+hr{
+    margin-top: 0;
+}
 
 /* Main Content */
 
