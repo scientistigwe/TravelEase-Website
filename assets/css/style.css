@@ -100,6 +100,20 @@ hr{
 
 /* Main Content */
 
+.hidden-text {
+    opacity: 0;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 30px;
+    filter: invert(100%);
+}
+
+.carousel-control-next-icon {
+    
+    filter: invert(100%);
+    margin-left: 55px;
+}
 
 /* Footer */
 
