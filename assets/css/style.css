@@ -127,11 +127,41 @@ hr{
     background: #e79a0b;
 }
 
+#team{
+    margin-top: 10%;
+}
+
 #footer-details {
     padding: 20px;
 }
 
+/*Teams Section */
+.teams-card{
+    width: 350px;
+    height: 500px;
+    perspective: 1000px;
+}
 
+.card-inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.teams-card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+.card-img, .card-details{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hide backface to prevent flickering */
+}
+
+.card-details{
+    transform: rotateY(180deg);
+}
 
 /*****
 ** BOOKING PAGE **
@@ -206,6 +236,7 @@ hr{
             width: 100%;
             top: 300px;
         }
+    }
 
 
 
@@ -230,3 +261,37 @@ hr{
 /*****
 ** MEDIA QUERIES **
 *****/
+
+.card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; /* Adds perspective for 3D effect */
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s; /* Add transition for smooth animation */
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg); /* Rotate the card on hover */
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hide backface to prevent flickering */
+  }
+  
+  .card-front {
+    /* Front styling */
+  }
+  
+  .card-back {
+    /* Back styling */
+    transform: rotateY(180deg); /* Initially rotate backside of the card */
+  }
+  
