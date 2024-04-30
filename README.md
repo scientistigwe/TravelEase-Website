@@ -285,7 +285,7 @@ The key features are:
 
 - Other features to be implemented in the future include:
 
-- <strong>Online Booking:</strong> Implementing an online booking system that enables clients to schedule appointments directly through the website, offering convenience and flexibility in selecting desired dates and times for their visits.
+- <strong>Carousel button slider:</strong> A slider with a javascript listener that will capture a button click and update the carousel accordingly.
 
 - <strong>ChatBot:</strong>: An AI-powered self service system that will guide and direct clients based on their specific needs.
 

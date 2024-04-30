@@ -13,6 +13,53 @@ html,body{
 }
 
 /*****
+** SECTION STYLING **
+*****/
+.section-title{
+    font-size: 35px;
+    margin: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    position: relative;
+    padding-left: 37px;
+}
+.section-title .section-number{
+    position: absolute;
+    font-weight: 700;
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    color: #333333;
+}
+
+.section-title .section-number::after{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 38px;
+    background: #000000;
+    margin: 10px auto 0;
+
+}
+
+.section-number{
+    color: #000;
+}
+.section-title .small-text{
+    display: block;
+    letter-spacing: 0.4em;
+    font-size: 14px;
+    color: #333333;
+}
+.section-title .big-text{
+    letter-spacing: 0.03em;
+    display: block;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+/*****
 ** HOMEPAGE **
 *****/
 
@@ -105,8 +152,26 @@ hr{
 
 
 /*****
-** DESTINATION CATEGORIES PAGE **
+** DISCOVER PLACES PAGE **
 *****/
+#active-slide-indicator{
+    display: inline-block;
+}
+
+#active-slide-indicator span{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+#active-slide-indicator span.active{
+    background-color: #000;
+}
+
 
 
 
