@@ -179,6 +179,34 @@ hr{
 ** PLAN AND PRICING PAGE **
 *****/
 
+.card-header {
+    font-weight: bold;
+}
+
+#plans {
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent background so it looks good with hero image */
+    border-radius: 8px; /* Rounds corners */
+    width: 90%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Received help from StackOverFlow to solve centering issue */
+}
+    .card-header {
+        background-color: #054085;
+        color: white;
+    }
+
+    .card {
+        margin-bottom: 20px; /* Adds space between cards */
+    }
+
+    @media (max-width: 768px) {
+        #plans {
+            width: 100%;
+            top: 300px;
+        }
+
 
 
 /*****
