@@ -34,7 +34,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <a href="/templates/contact-us.html" class="" alt="Contact us page">
+                    <a href="./templates/contact-us.html" class="" alt="Contact us page">
                         Contact us
                     </a>
                 </div>
@@ -62,11 +62,15 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a href="#" class="navbar-brand">
-                    <img src="/assets/images/TravelEase-logo.png" width="100" height="100">
+                    <img src="./assets/images/TravelEase-logo.png" width="100" height="100">
                 </a>
                 <div class="d-flex justify-content-end">
                     <form class="d-flex">
                         <div class="input-group">
+                            <input class="form-control ms-auto" type="search" placeholder="Search next trip.."
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">
+                                <i class="fa-solid fa-magnifying-glass-location"></i>
                             </button>
                         </div>
                     </form>
@@ -111,7 +115,7 @@
         </nav>
 
     </section>
-
+    </header>
     <!-- MAIN CONTENT -->
     <main>
         <!-- Reviews Section -->
@@ -186,12 +190,12 @@
                     <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
-                        <span class="">Previous</span>
+                        <span class="hidden-text">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
                         <span class="hidden-text">Next</span>
+                        <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
             </div>
