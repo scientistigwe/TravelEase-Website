@@ -29,7 +29,12 @@ html, body{
     display: inline-block;
     position: relative;
     padding-left: 37px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
+
 .section-title .section-number{
     position: absolute;
     font-weight: 700;
@@ -56,6 +61,7 @@ html, body{
     letter-spacing: 0.4em;
     font-size: 14px;
     color: #333333;
+    font-weight: 700;
 }
 .section-title .big-text{
     letter-spacing: 0.03em;
@@ -163,29 +169,28 @@ hr{
 .slogan{
     text-transform: capitalize;
     text-align: center;
-    background-color: rgba(0, 0, 0, .2);
-    margin: auto;
-    margin-top: 20%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 7%;
     color: #000;
     font-weight: 700;
     animation: heartbeat 4s infinite;
+    letter-spacing: 0.1em;
 }
 
 
 .slogan span{
-    color: #12e70b;
-}
-
-.section-title {
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 5px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    color: #373dec;
 }
 
 /* Main Content */
 
+/* Section 1: Reviews */
 
+#reviews{
+max-width: 700px;
+margin: auto;
+
+}
 .hidden-text {
     opacity: 0;
 }
@@ -199,6 +204,62 @@ hr{
     
     filter: invert(100%);
     margin-left: 90px;
+}
+
+/* Section 2: Discover-places */
+.container-wrapper{
+    margin-right: 30px;
+}
+
+#discover-places{
+    margin-top: 10%;
+}
+
+.place-container{
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.place-container:hover{
+animation: heartbeat 2s ease;
+}
+
+/*Teams Section */
+.teams-card{
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.card-img img{
+    border-radius: 30px;
+}
+
+.card-img h3{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-size: contain;
+    text-decoration:none;
+}
+
+.card-inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+
+.teams-card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+.card-img, .card-details{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hide backface to prevent flickering */
+}
+
+.card-details{
+    transform: rotateY(180deg);
 }
 
 /* Footer */
@@ -228,39 +289,14 @@ hr{
 }
 
 #team{
-    margin-top: 10%;
+    margin-top: 12%;
+    margin-bottom: 20%;
+    margin-left: 2%;
+margin-right: 2%
 }
 
 #footer-details {
     padding: 20px;
-}
-
-/*Teams Section */
-.teams-card{
-    width: 350px;
-    height: 500px;
-    perspective: 1000px;
-}
-
-.card-inner{
-    width: 100%;
-    height: 100%;
-    transition: transform 2s;
-    transform-style: preserve-3d;
-}
-
-.teams-card:hover .card-inner{
-    transform: rotateY(180deg);
-}
-.card-img, .card-details{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden; /* Hide backface to prevent flickering */
-}
-
-.card-details{
-    transform: rotateY(180deg);
 }
 
 /*****
@@ -488,7 +524,9 @@ hr{
     #plans {
         width: 100%;
         top: 300px;
-    }}
+    }
+}
+
 
 /*Work in progress, planning on improving the experience on larger screens
 
