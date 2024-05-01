@@ -13,7 +13,7 @@
   <a href="https://codeinstitute.net/?nab=0">
     <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" align="left" alt="Project Logo" width="80" height="80">
           <a href="https://scientistigwe.github.io/TravelEase-Website/">
-    <img src="./assets/images/image-removebg-preview.png" align="right" alt="Project Logo" width="80" height="80">
+    <img src="./assets/images/TravelEase-logo.png" align="right" alt="Project Logo" width="88" height="90">
     </div>
   </a>
   <br>
@@ -28,7 +28,7 @@
     (Replace with a short intro sentence about your project).
     <br />
     <br />
-    <a href="https://github.com/path-to-readme-file"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/scientistigwe/TravelEase-Website/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
 
@@ -108,7 +108,7 @@ This section contains summary information about the project, the user expections
 
 <h2 id="about-the-project">About The Project</h2>
 
-<p align="center"><a href="https://path-to-deployed-site.com">"**name-of-project**"</a></p>
+<p align="center"><a href="https://scientistigwe.github.io/TravelEase-Website/">TravelEase Homepage</a></p>
 
 <a href="https://github.com/scientistigwe/README-Template">
 <img src="./assets/images/screenshot.png" alt="Product Screenshot" width="600" height="600">
@@ -116,32 +116,32 @@ This section contains summary information about the project, the user expections
 
 <h2 id="ux">User Experience (UX)</h2>
 
-"**name-of-project**" is a software designed to provide abc services.
+TravelEase is a one-stop solution for adventurers, explorers and lovers of nature. It was painstakely designed to do all the hardstuff and erase all gray areas around tourism planning and implementation. We do this so that you can do more fun things.
 
-The uniqueness of this project are:
+Some of the unique features of this project are:
 
-- abc
-- xyz
-- 123
-- etc
+- User friendly landing page.
+- Clear navigation items and call to action buttons at strategic locations
+- Ai-powered travel planner and up-to-date travel time.
+- A gallery of hot tourist destination sites to keep users busy and desiring.
 
-You can view the deployed website [here](https://path-to-deployed-site.com)
+Click the link to visit the site: [TravelEase Website](https://scientistigwe.github.io/TravelEase-Website/)
 
 <h2 id="user-stories">User Stories</h2>
 
-- As a new user of this website, I want to easily.......
-- As a new user of this website, I want to quickly.......
-- As a new user of this website, I want to quickly.......
-- As a new user of this website, I want to see.......
-- As a new user of this website, I want to see.......
-- As a new user of this website, I want to easily find.......
-- As a new user to this website, I want to meet the team
-- As a user, I want to follow xyz on social media.......
-- etc
+- As a new user of this website, I want to easily navigate my way around the websites with clickable buttons to desired pages.
+- As a new user of this website, I want to see top holiday destination areas, so that I can easily decide where to visit.
+- As a user, I want to access the Plan and Pricing page easily, so that I can make informed decisions.
+- As a user, I want to access the Plan and Pricing page easily, so that I can make informed decisions.
+- As a user, I want the Plan and Pricing page to look simple and rich with clarity on each plan and the associated pricing, so that I can make compare my options.
+- As a user, I want to access the Booking page easily, so that I can make a booking.
+- As a user, I want to seamlessly get travel information about my selected destination, so that I can be up-to-date on upcoming trip.
+- As a user, I want to see the social media handles, so that I can follow TravelEase on social media.
+- As a user, I will like to have a chatbot in the homepage that will answer some questions and help in travel planning/budgeting.
 
 <h2 id="technology-stack">Technology Stack</h2>
 
-This subsection outlines the technologies, frameworks, libraries, and tools used in the development of this project. It provides insight into the foundational components that power "**name-of-project**". Add-ons ad plugins are captured in the acknowledgements subsection (N/B: below are dummy samples. Replace with the actual project frameworks and libraries).
+This subsection outlines the technologies, frameworks, libraries, and tools used in the development of this project. It provides insight into the foundational components that powers TravelEase. Add-ons ad plugins are captured in the acknowledgements subsection (N/B: below are dummy samples. Replace with the actual project frameworks and libraries).
 
 <h2 id="languages-frameworks-libraries">Languages, Frameworks and Libraries</h2>
 
@@ -171,18 +171,6 @@ This subsection outlines the technologies, frameworks, libraries, and tools used
 
 - <img src="./assets/icons/html_formatter.png" width="20px" align="top"><a href="https://www.freeformatter.com/html-formatter.html"> Free Online HTML Formatter</a> - Used to correct indentation issues and get rid of excess whitespace.
 
-- <img src="./assets/icons/next_js.png" width="20px" align="top"><a href="[Next-url]"> Next.js</a> - Used for server-side rendering and building modern, scalable web applications.
-
-- <img src="./assets/icons/react..png" width="20px" align="top"><a href="[React-url]"> React.js</a> - Used for building user interfaces, especially single-page applications.
-
-- <img src="./assets/icons/Vue_js.png" width="20px" align="top"><a href="[Vue-url]"> Vue.js</a> - Used for building interactive web interfaces and single-page applications.
-
-- <img src="./assets/icons/angular.png" width="20px" align="top"><a href="[Angular-url]"> Angular</a> - Used for building large-scale, high-performance web applications.
-
-- <img src="./assets/icons/svelte.png" width="20px" align="top"><a href="[Svelte-url]"> Svelte</a> - Used for building fast, lightweight web applications with minimal overhead.
-
-- <img src="./assets/icons/laravel.png" width="20px" align="top"><a href="[Laravel-url]"> Laravel</a> - Used for building web applications with elegant syntax and a robust ecosystem.
-
 - <img src="./assets/icons/bootstrap.png" width="20px" align="top"><a href="[Bootstrap-url]"> Bootstrap</a> - Used for building responsive and mobile-first websites and web applications.
 
 - <img src="./assets/icons/jquery.png" width="20px" align="top"><a href="[JQuery-url]"> jQuery</a> - Used for simplifying HTML document traversing, event handling, and animation.
@@ -197,7 +185,7 @@ This project was implemented using the Agile Manifesto methodology. Below are th
 - **a screenshot or graphic representation of a Zoom meeting with team members.**
 
 - Vision 2: Responding to change over following a plan: **[Sample description]**: Throughout the project, the team managed (
-  [![GitHub issues](https://img.shields.io/github/issues-closed/github-username/name-of-repository?)](https://github.com/github-username/name-of-repository/issues) + [![GitHub issues](https://img.shields.io/github/issues/github-username/name-of-repository?)](https://github.com/github-username/name-of-repository/issues) ) GitHub issues, adapting to changing requirements and feedback iteratively.
+  [![GitHub issues](https://img.shields.io/github/issues-closed/scientistigwe/TravelEase-Website?)](https://github.com/scientistigwe/TravelEase-Website/issues) + [![GitHub issues](https://img.shields.io/github/issues/scientistigwe/TravelEase-Website?)](https://github.com/scientistigwe/TravelEase-Website/issues) ) GitHub issues, adapting to changing requirements and feedback iteratively.
   **A screenshot of the GitHub project board demonstrates their flexibility.**
 
 - Vision 3: Working software over comprehensive documentation: **[Sample description]** Achieved **[number of story points]** across **[number of sprints]**, emphasizing the focus on delivering functional software increments.
@@ -285,7 +273,7 @@ The key features are:
 
 - Other features to be implemented in the future include:
 
-- <strong>Online Booking:</strong> Implementing an online booking system that enables clients to schedule appointments directly through the website, offering convenience and flexibility in selecting desired dates and times for their visits.
+- <strong>Carousel button slider:</strong> A slider with a javascript listener that will capture a button click and update the carousel accordingly.
 
 - <strong>ChatBot:</strong>: An AI-powered self service system that will guide and direct clients based on their specific needs.
 

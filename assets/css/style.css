@@ -3,6 +3,60 @@
 
 
 /* General style */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100vw;
+}
+
+/*****
+** SECTION STYLING **
+*****/
+.section-title{
+    font-size: 35px;
+    margin: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    position: relative;
+    padding-left: 37px;
+}
+.section-title .section-number{
+    position: absolute;
+    font-weight: 700;
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    color: #333333;
+}
+
+.section-title .section-number::after{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 38px;
+    background: #000000;
+    margin: 10px auto 0;
+
+}
+
+.section-number{
+    color: #000;
+}
+.section-title .small-text{
+    display: block;
+    letter-spacing: 0.4em;
+    font-size: 14px;
+    color: #333333;
+}
+.section-title .big-text{
+    letter-spacing: 0.03em;
+    display: block;
+    color: #000000;
+    text-transform: uppercase;
+}
 
 
 /*****
@@ -11,9 +65,55 @@
 
 /* Header */
 
+.header-section {
+    width: 100vw;
+    min-height: 700px;
+    position: absolute;
+    background-position: center;
+    overflow: hidden;
+    z-index: -99;
+    animation: slideBackground 100s infinite;
+}
+
+#header-section{
+    min-height: 700px;
+}
+
+@keyframes slideBackground {
+    0% {
+        background-image: url("/assets/images/sky2.jpg");
+    }
+    33.33% {
+        background-image: url("/assets/images/sky.jpg");
+    }
+    66.66% {
+        background-image: url("/assets/images/sky3.jpg");
+    }
+    100% {
+        background-image: url("/assets/images/sky2.jpg");
+    }
+}
+
+hr{
+    margin-top: 0;
+}
 
 /* Main Content */
 
+.hidden-text {
+    opacity: 0;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 30px;
+    filter: invert(100%);
+}
+
+.carousel-control-next-icon {
+    
+    filter: invert(100%);
+    margin-left: 55px;
+}
 
 /* Footer */
 
@@ -41,11 +141,41 @@
     background: #e79a0b;
 }
 
+#team{
+    margin-top: 10%;
+}
+
 #footer-details {
     padding: 20px;
 }
 
+/*Teams Section */
+.teams-card{
+    width: 350px;
+    height: 500px;
+    perspective: 1000px;
+}
 
+.card-inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.teams-card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+.card-img, .card-details{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hide backface to prevent flickering */
+}
+
+.card-details{
+    transform: rotateY(180deg);
+}
 
 /*****
 ** BOOKING PAGE **
@@ -66,14 +196,61 @@
 
 
 /*****
-** DESTINATION CATEGORIES PAGE **
+** DISCOVER PLACES PAGE **
 *****/
+#active-slide-indicator{
+    display: inline-block;
+}
+
+#active-slide-indicator span{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+#active-slide-indicator span.active{
+    background-color: #000;
+}
+
 
 
 
 /*****
 ** PLAN AND PRICING PAGE **
 *****/
+
+.card-header {
+    font-weight: bold;
+}
+
+#plans {
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent background so it looks good with hero image */
+    border-radius: 8px; /* Rounds corners */
+    width: 90%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Received help from StackOverFlow to solve centering issue */
+}
+    .card-header {
+        background-color: #054085;
+        color: white;
+    }
+
+    .card {
+        margin-bottom: 20px; /* Adds space between cards */
+    }
+
+    @media (max-width: 768px) {
+        #plans {
+            width: 100%;
+            top: 300px;
+        }
+    }
 
 
 
@@ -98,3 +275,37 @@
 /*****
 ** MEDIA QUERIES **
 *****/
+
+.card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; /* Adds perspective for 3D effect */
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s; /* Add transition for smooth animation */
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg); /* Rotate the card on hover */
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hide backface to prevent flickering */
+  }
+  
+  .card-front {
+    /* Front styling */
+  }
+  
+  .card-back {
+    /* Back styling */
+    transform: rotateY(180deg); /* Initially rotate backside of the card */
+  }
+  
