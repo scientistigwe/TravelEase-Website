@@ -341,12 +341,13 @@ hr{
   #about-us h2 {
     font-size: 28px; 
     margin-bottom: 20px; 
-  
+  }
   /* Style the paragraphs */
   #about-us p {
     font-size: 16px; 
     line-height: 1.6; 
     margin-bottom: 20px; 
+  }
   
   /* Style the mission heading */
   #about-us h3 {
