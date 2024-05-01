@@ -186,6 +186,76 @@ hr{
 /*****
 ** CONTACT US PAGE **
 *****/
+/* Form */
+
+#contact-us {
+
+    background-image: url("../images/air-plane-flight-route-with-start-point.jpg") hidden;
+
+    background-size: cover;
+
+    background-position: 75%;
+
+    padding: 20px 10% 0 10%;
+
+    flex-grow: 1;
+}
+
+#contact-us {
+
+    color: #383131;
+
+    background-color: rgba(60, 60, 60, 0.6);
+
+    padding: 30px 50;
+}
+
+#contact-us>h5 {
+
+    color: #0c0c0c;
+
+    margin-bottom: 20px;
+
+}
+
+.text-input {
+
+    background: transparent;
+
+    color: #fafafa;
+
+    width: 100%;
+
+    height: 25px;
+
+    margin: 5px 0 20px 0;
+
+    border: 1px solid #fafafa;
+
+    border-radius: 2px;
+
+    padding: 0 5px;
+
+}
+
+
+
+.join-button {
+
+    margin-top: 20px;
+
+    border-radius: 2px;
+
+    padding: 15px 32px;
+
+    font-size: 100%;
+
+    background-color: #78787a;
+
+    color: #fafafa;
+
+}
+
 
 
 
