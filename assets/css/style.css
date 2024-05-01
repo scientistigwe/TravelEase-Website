@@ -8,10 +8,16 @@
     padding: 0;
 }
 
-html,body{
+html, body{
     width: 100vw;
+    overflow-x: hidden!important;
 }
 
+.container-fluid{
+    width: 100vw;
+    margin-right: 20px;
+    margin-left: 20px;
+}
 /*****
 ** SECTION STYLING **
 *****/
@@ -39,7 +45,6 @@ html,body{
     height: 38px;
     background: #000000;
     margin: 10px auto 0;
-
 }
 
 .section-number{
@@ -64,19 +69,59 @@ html,body{
 *****/
 
 /* Header */
-
 .header-section {
     width: 100vw;
-    min-height: 700px;
+    min-height: 600px;
     position: absolute;
     background-position: center;
-    overflow: hidden;
     z-index: -99;
     animation: slideBackground 100s infinite;
 }
 
-#header-section{
-    min-height: 700px;
+#header-id{
+    min-height: 600px;
+}
+
+.nav-menu-item, .nav-item{
+    font-size: 1.2em;
+    font-weight: 500;
+    color:#001F3F;
+    text-decoration: none;
+}
+
+.nav-menu-item:hover, .nav-item:hover{
+    font-size: 1.5em;
+    font-weight: 300;
+    color:#6292c3;
+    text-decoration: none;
+}
+.dropdown-item, #menu-items{
+    font-size: 1.05em;
+    font-weight: 400;
+    color:#001F3F
+}
+
+.dropdown-item:hover, #menu-items:hover{
+    font-size: 1.10em;
+    font-weight: 300;
+    color:#69a2db
+}
+
+.booking{
+color: red;
+animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+transform: scale(1)
+    }
+    50% {
+transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1)
+    }
 }
 
 @keyframes slideBackground {
@@ -159,7 +204,7 @@ hr{
 .card-inner{
     width: 100%;
     height: 100%;
-    transition: transform 0.6s;
+    transition: transform 2s;
     transform-style: preserve-3d;
 }
 
@@ -315,12 +360,7 @@ hr{
         margin-bottom: 20px; /* Adds space between cards */
     }
 
-    @media (max-width: 768px) {
-        #plans {
-            width: 100%;
-            top: 300px;
-        }
-    }
+
 
 
 
@@ -346,36 +386,19 @@ hr{
 ** MEDIA QUERIES **
 *****/
 
-.card {
-    width: 300px;
-    height: 400px;
-    perspective: 1000px; /* Adds perspective for 3D effect */
-  }
-  
-  .card-inner {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s; /* Add transition for smooth animation */
-    transform-style: preserve-3d;
-  }
-  
-  .card:hover .card-inner {
-    transform: rotateY(180deg); /* Rotate the card on hover */
-  }
-  
-  .card-front, .card-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden; /* Hide backface to prevent flickering */
-  }
-  
-  .card-front {
-    /* Front styling */
-  }
-  
-  .card-back {
-    /* Back styling */
-    transform: rotateY(180deg); /* Initially rotate backside of the card */
-  }
-  
+  @media (max-width: 768px) {
+    #plans {
+        width: 100%;
+        top: 300px;
+    }
+}
+@media (min-width: 768px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
+    #plans {
+        width: 100%;
+        top: 300px;
+    }
+}

@@ -365,6 +365,7 @@ Given the serene ambiance of the establishment, the website echoes this sentimen
 
 <h3 id="color">Color</h3>
 
+- **Navigation menu items - Dark Navy Blue (#001F3F)**: This color provides a strong contrast with the sky blue background image and enhances readability.
 - **Main background color - **#color hex** (color name)** - I chose this color because **\*\***\***\*\***
 - **h1 headings and nav bar - [color]** - reason
 - **h2 headings - [color]** - reason
