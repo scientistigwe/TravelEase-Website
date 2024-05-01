@@ -171,12 +171,21 @@ hr{
     animation: heartbeat 4s infinite;
 }
 
+
 .slogan span{
     color: #12e70b;
 }
 
+.section-title {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
 
 /* Main Content */
+
+
 .hidden-text {
     opacity: 0;
 }
@@ -404,6 +413,14 @@ hr{
 ** PLAN AND PRICING PAGE **
 *****/
 
+.platinumcard-text {
+    color: black; 
+}
+
+.plancard-background {
+    background-color: rgb(205, 225, 239);
+}
+
 .card-header {
     font-weight: bold;
 }
@@ -441,13 +458,13 @@ hr{
 }
 
 .customer-title {
-    color: rgb(172, 172, 207);
+    color: rgb(20, 85, 39);
     font-weight: bold;
     text-decoration: underline;
 }
 
 .card-background {
-    background-color: rgba(87, 230, 166, 0.8);
+    background-color: rgba(102, 234, 236, 0.633);
     border-radius: 5px;
 }
 
