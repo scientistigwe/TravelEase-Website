@@ -23,10 +23,11 @@
     <!-- Custom CSS link -->
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
-        <section id="header-section">
+        <section id="header-id">
             <!-- Background Image -->
             <div class="header-section"></div>
 
@@ -34,24 +35,49 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="/templates/contact-us.html" class="" alt="Contact us page">
-                            Contact us
+                        <a href="../templates/contact-us.html" class="nav-menu-item" alt="Link to Contact Us page">
+                            Contact Us
                         </a>
+                    </div>
+
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <form class="d-flex">
+                            <div class="input-group" id="search-bar">
+                                <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass-location"></i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                     <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="/templates/reviews.html" class="" alt="Contact us page">
-                            Reviews
+                        <a href="../templates/booking.html" class="nav-menu-item booking" alt="Booking page">
+                            Book Now
                         </a>
                     </div>
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <div class="nav-item dropdown nav-menu-item">
+                        <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Country
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#" bg-dark>Country 1</a></li>
-                            <li><a class="dropdown-item" href="#" bg-dark>Country 2</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="country-dropdown">
+                            <li><a class="dropdown-item" href="../templates/discover-places.html#ocean-beaches"
+                                    bg-dark><img src="../assets/icons/spain_flag.png" alt="Spainish flag" width="30"
+                                        height="30">
+                                    Spain</a></li>
+                            <li><a class="dropdown-item" href="../templates/discover-places.html#snowy-countryside"
+                                    bg-dark><img src="../assets/icons/iceland_flag.png" alt="Iceland flag" width="30"
+                                        height="30">
+                                    Iceland</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../templates/discover-places.html#mountain-and-nature"
+                                    bg-dark><img src="../assets/icons/greece_flag.png" alt="Greece flag" width="30"
+                                        height="30">
+                                    Greece</a></li>
+                        </ul>
                     </div>
+                </div>
             </nav>
             <hr>
             <!-- Second Navigation Bar -->
@@ -61,47 +87,59 @@
                         aria-controls="menu-items" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a href="/index.html" class="navbar-brand">
-                        <img src="/assets/images/TravelEase-logo.png" width="100" height="100">
+                    <a href="../index.html" class="navbar-brand">
+                        <img src="../assets/images/TravelEase-logo.png" width="100" height="100">
                     </a>
-                    <div class="d-flex justify-content-end">
-                        <form class="d-flex">
-                            <div class="input-group">
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+
+
                     <div class="collapse navbar-collapse" id="menu-items">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" href="/index.html">Home</a>
+                                <a class="nav-link" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="menu-items" role="button"
+                                <a class="nav-link dropdown-toggle" id="menu-items" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Travel Insights
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item" href="#">Travel Time</a></li>
-                                    <li><a class="dropdown-item" href="#">Travel Tips</a></li>
+                                    <li><a class="dropdown-item" href="../templates/travel-time.html">Travel Time</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../templates/travel-tips.html">Travel Tips</a>
+                                    </li>
                                 </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../templates/reviews.html" class="nav-link active" alt="Link to reviews page">
+                                    Reviews
+                                </a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="menu-items" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Discover Places
                                 </a>
+
                                 <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item" href="#">Mountain and Nature Lovers</a></li>
-                                    <li><a class="dropdown-item" href="#">Seaside and Beaches</a></li>
-                                    <li><a class="dropdown-item" href="#">Snowy</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="../templates/discover-places.html#mountain-and-nature">Mountain side &
+                                            Nature's
+                                            beauty</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="../templates/discover-places.html#ocean-beaches">Ocean view &
+                                            Beaches</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="../templates/discover-places.html#snowy-countryside">Snowy &
+                                            Countryside</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/templates/plan-and-pricing.html">Plan and Pricing</a>
+                                <a class="nav-link" href="../templates/plan-and-pricing.html">Plan and Pricing</a>
                             </li>
+
+
                             <li class="nav-item">
-                                <a class="nav-link" href="/templates/about.html">About</a>
+                                <a class="nav-link" href="../templates/about.html">About</a>
                             </li>
                         </ul>
                         </li>
@@ -109,119 +147,123 @@
                     </div>
                 </div>
             </nav>
+        </section>
+    </header>
 
-            <body>
-                <!-- Reviews Section -->
-                <section class="container">
-                    <h2 class="text-center reviews-text">What do some of our <span class="customer-title">customers</span> say?</h2>
-                    <div class="row">
-                        <div class="col-md-3 mb-3">
-                            <div class="card">
-                                <div class="card-body text-center card-background">
-                                    <h4 class="card-title">Placeholder Name</h4>
-                                    <!-- Decided to use text-based stars due to code readability and simplicity -->
-                                    <p class="card-text">★★★★★</p>
-                                    <!-- -->
-                                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <div class="card">
-                                <div class="card-body text-center card-background">
-                                    <h4 class="card-title">Placeholder Name</h4>
-                                    <p class="card-text">★★★★★</p>
-                                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <div class="card">
-                                <div class="card-body text-center card-background">
-                                    <h4 class="card-title">Placeholder Name</h4>
-                                    <p class="card-text">★★★★★</p>
-                                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <div class="card">
-                                <div class="card-body text-center card-background">
-                                    <h4 class="card-title">Placeholder Name</h4>
-                                    <p class="card-text">★★★★★</p>
-                                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <div class="card">
-                                <div class="card-body text-center card-background">
-                                    <h4 class="card-title">Placeholder Name</h4>
-                                    <p class="card-text">★★★★★</p>
-                                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <div class="card">
-                                <div class="card-body text-center card-background">
-                                    <h4 class="card-title">Placeholder Name</h4>
-                                    <p class="card-text">★★★★★</p>
-                                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <div class="card">
-                                <div class="card-body text-center card-background">
-                                    <h4 class="card-title">Placeholder Name</h4>
-                                    <p class="card-text">★★★★★</p>
-                                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <div class="card">
-                                <div class="card-body text-center card-background">
-                                    <h4 class="card-title">Placeholder Name</h4>
-                                    <p class="card-text">★★★★★</p>
-                                    <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat."</p>
-                                </div>
-                            </div>
+    <body>
+        <!-- Reviews Section -->
+        <section class="container">
+            <h2 class="text-center reviews-text">What do some of our <span class="customer-title">customers</span> say?
+            </h2>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center card-background">
+                            <h4 class="card-title">Placeholder Name</h4>
+                            <!-- Decided to use text-based stars due to code readability and simplicity -->
+                            <p class="card-text">★★★★★</p>
+                            <!-- -->
+                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat."</p>
                         </div>
                     </div>
-                </section>
-            </body>
-            </html>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center card-background">
+                            <h4 class="card-title">Placeholder Name</h4>
+                            <p class="card-text">★★★★★</p>
+                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center card-background">
+                            <h4 class="card-title">Placeholder Name</h4>
+                            <p class="card-text">★★★★★</p>
+                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center card-background">
+                            <h4 class="card-title">Placeholder Name</h4>
+                            <p class="card-text">★★★★★</p>
+                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center card-background">
+                            <h4 class="card-title">Placeholder Name</h4>
+                            <p class="card-text">★★★★★</p>
+                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center card-background">
+                            <h4 class="card-title">Placeholder Name</h4>
+                            <p class="card-text">★★★★★</p>
+                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center card-background">
+                            <h4 class="card-title">Placeholder Name</h4>
+                            <p class="card-text">★★★★★</p>
+                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center card-background">
+                            <h4 class="card-title">Placeholder Name</h4>
+                            <p class="card-text">★★★★★</p>
+                            <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>
