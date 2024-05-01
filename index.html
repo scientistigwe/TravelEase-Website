@@ -12,9 +12,6 @@
     <title>TravelEase | your gateway to the world</title>
 
     <!-- Bootstrap CSS link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet"
@@ -26,95 +23,126 @@
 
 <body>
     <!-- HEADER -->
-    <section id="header-section">
-        <!-- Background Image -->
-        <div class="header-section"></div>
+    <header>
+        <section id="header-id">
+            <!-- Background Image -->
+            <div class="header-section"></div>
 
-        <!-- First Navigation Bar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <a href="./templates/contact-us.html" class="" alt="Contact us page">
-                        Contact us
-                    </a>
-                </div>
-                <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <a href="./templates/contact-us.html" class="" alt="Contact us page">
-                        Reviews
-                    </a>
-                </div>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Country
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#" bg-dark>Country 1</a></li>
-                        <li><a class="dropdown-item" href="#" bg-dark>Country 2</a></li>
-                </div>
-        </nav>
-        <hr>
-        <!-- Second Navigation Bar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items" type="button"
-                    aria-controls="menu-items" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a href="#" class="navbar-brand">
-                    <img src="./assets/images/TravelEase-logo.png" width="100" height="100">
-                </a>
-                <div class="d-flex justify-content-end">
-                    <form class="d-flex">
-                        <div class="input-group">
-                            <input class="form-control ms-auto" type="search" placeholder="Search next trip.."
-                                aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">
-                                <i class="fa-solid fa-magnifying-glass-location"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <div class="collapse navbar-collapse" id="menu-items">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="menu-items" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Travel Insights
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                <li><a class="dropdown-item" href="#">Travel Time</a></li>
-                                <li><a class="dropdown-item" href="#">Travel Tips</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="menu-items" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Discover Places
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                <li><a class="dropdown-item" href="#">Mountain and Nature Lovers</a></li>
-                                <li><a class="dropdown-item" href="#">Seaside and Beaches</a></li>
-                                <li><a class="dropdown-item" href="#">Snowy</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Plan and Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                    </ul>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            <!-- First Navigation Bar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a href="./templates/contact-us.html" class="nav-menu-item" alt="Link to Contact Us page">
+                            Contact Us
+                        </a>
+                    </div>
 
-    </section>
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <form class="d-flex">
+                            <div class="input-group" id="search-bar">
+                                <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass-location"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a href="./templates/booking.html" class="nav-menu-item booking" alt="Booking page">
+                            Book Now
+                        </a>
+                    </div>
+                    <div class="nav-item dropdown nav-menu-item">
+                        <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Country
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="country-dropdown">
+                            <li><a class="dropdown-item" href="./templates/discover-places.html" bg-dark><img
+                                        src="./assets/icons/spain_flag.png" alt="Spainish flag" width="30" height="30">
+                                    Spain</a></li>
+                            <li><a class="dropdown-item" href="./templates/discover-places.html" bg-dark><img
+                                        src="./assets/icons/iceland_flag.png" alt="Iceland flag" width="30" height="30">
+                                    Iceland</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./templates/discover-places.html" bg-dark><img
+                                        src="./assets/icons/greece_flag.png" alt="Greece flag" width="30" height="30">
+                                    Greece</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <hr>
+            <!-- Second Navigation Bar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items" type="button"
+                        aria-controls="menu-items" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="./index.html" class="navbar-brand">
+                        <img src="./assets/images/TravelEase-logo.png" width="100" height="100">
+                    </a>
+
+
+                    <div class="collapse navbar-collapse" id="menu-items">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="menu-items" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Travel Insights
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                    <li><a class="dropdown-item" href="./templates/travel-time.html">Travel Time</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./templates/travel-tips.html">Travel Tips</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./templates/reviews.html" class="nav-link" alt="Link to reviews page">
+                                    Reviews
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="menu-items" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Discover Places
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                    <li><a class="dropdown-item"
+                                            href="./templates/discover-places.html#mountain-and-nature">Mountain side &
+                                            Nature's
+                                            beauty</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./templates/discover-places.html#ocean-beaches">Ocean view &
+                                            Beaches</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./templates/discover-places.html#snowy-countryside">Snowy &
+                                            Countryside</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./templates/plan-and-pricing.html">Plan and Pricing</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./templates/about.html">About</a>
+                            </li>
+                        </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </section>
     </header>
     <!-- MAIN CONTENT -->
     <main>
@@ -391,12 +419,12 @@
         </div>
     </footer>
 
-
     <!-- Font awesome and Bootstrap Javascript link -->
     <script src="https://kit.fontawesome.com/01058b62ac.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 
