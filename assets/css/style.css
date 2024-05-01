@@ -163,14 +163,14 @@ hr{
 }
 
 .carousel-control-prev-icon {
-    margin-right: 30px;
+    margin-right: 65px;
     filter: invert(100%);
 }
 
 .carousel-control-next-icon {
     
     filter: invert(100%);
-    margin-left: 55px;
+    margin-left: 90px;
 }
 
 /* Footer */
@@ -408,14 +408,29 @@ hr{
     }
 
 
-
-
-
 /*****
 ** REVIEWS PAGE **
 *****/
 
+.reviews-text {
+    margin-bottom: 20px;
+}
 
+.card-title {
+    font-weight: bold;
+    text-decoration: underline ;
+}
+
+.customer-title {
+    color: rgb(172, 172, 207);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.card-background {
+    background-color: rgba(87, 230, 166, 0.8);
+    border-radius: 5px;
+}
 
 /*****
 ** TRAVEL TIME PAGE **
@@ -433,19 +448,17 @@ hr{
 ** MEDIA QUERIES **
 *****/
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     #plans {
         width: 100%;
         top: 300px;
-    }
-}
-@media (min-width: 768px) {
-    html, body{
-        overflow-x: hidden;
-    }
+    }}
 
-    #plans {
+/*Work in progress, planning on improving the experience on larger screens
+
+@media (width >= 1080px) {
+    #reviewCarousel {
         width: 100%;
-        top: 300px;
     }
 }
+*/
