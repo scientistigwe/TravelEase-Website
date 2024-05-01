@@ -343,15 +343,15 @@ Given the serene ambiance of the establishment, the website echoes this sentimen
 
 - **Navigation menu items - Dark Navy Blue (#001F3F)**: This color provides a strong contrast with the sky blue background image and enhances readability.
 - **Main background color - **#color hex** (color name)** - I chose this color because **\*\***\***\*\***
-- **h1 headings and nav bar - [color]** - reason
-- **h2 headings - [color]** - reason
-- **p - [color]** - reason
-- **footer - [color]** - reason
+- **h1 headings and nav bar - [default]** - reason
+- **h2 headings - [default]** - reason
+- **p - [default]** - reason
+- **footer - [default]** - we have kept most of our text the same default black colour because it matches well with the rest of the site, providing a solid contrast with the background, and causing no issues.
 
 <h3 id="font">Font</h3>
 
-- main font: Font name
-- Secondary font - Font name
+- main font: Montserrat - We have chosen Montserrat because it is a font-style that is widely available within most, if not all, browsers and the font maintains a professional style.
+- Secondary font - sans-serif
 
 <h3 id="media">Media</h3>
 
@@ -363,7 +363,7 @@ Given the serene ambiance of the establishment, the website echoes this sentimen
 
 **Our Team** - short description and reason for selection
 
-**Gallery** - short description and reason for selection
+**Gallery** - We have integrated the features of a gallery into our pages, by adding various sliders of a large variety of pictures. The pictures featured are chosen carefully to match background-colours of surrounding elements and the attached description.
 
 **Contact Us** - short description and reason for selection
 
