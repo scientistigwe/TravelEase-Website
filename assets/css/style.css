@@ -10,6 +10,7 @@
 
 html, body{
     width: 100vw;
+
     overflow-x: hidden!important;
 }
 
@@ -70,8 +71,20 @@ html, body{
 
 /* Header */
 .header-section {
-    width: 100vw;
-    min-height: 600px;
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-position: center;
+    z-index: -99;
+    animation: slideBackground 100s infinite;
+}
+
+.index-header-section{
+    width: 100%;
+    min-height: 100%;
     position: absolute;
     background-position: center;
     z-index: -99;
@@ -79,7 +92,7 @@ html, body{
 }
 
 #header-id{
-    min-height: 600px;
+    min-height: 61vh;
 }
 
 .nav-menu-item, .nav-item{
@@ -225,8 +238,21 @@ hr{
 /*****
 ** BOOKING PAGE **
 *****/
+.booking-form{
+    width: 60vw;
+    margin: auto;
+}
 
+.booking-form h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
 
+.form-label{
+    font-size: 1.2em;
+}
 
 /*****
 ** CONTACT US PAGE **
