@@ -254,13 +254,13 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <h1 id="features-and-structure">SECTION 3: PROJECT FEATURES AND STRUCTURE</h1>
 
-This section encompasses the various elements and functionalities aimed at enhancing the user experience and achieving the goals of ["**name-of-project**"] website. It outlines the key features and structural components intended to provide visitors with a seamless and informative journey through the platform.
+This section encompasses the various elements and functionalities aimed at enhancing the user experience and achieving the goals of the TravelEase website. It outlines the key features and structural components intended to provide visitors with a seamless and informative journey through the platform.
 
 <h1 id="features">Features</h1>
 
 The key features are:
 
-- <strong>Navigation:</strong> Designed to facilitate users effortlessly access to different sections and pages.
+- <strong>Navigation:</strong> Designed to facilitate users effortless access to different sections and pages.
 - <strong>Services:</strong> Provides comprehensive information about the services offered by the project.
 - <strong>Pricing:</strong> Provides corresponding prices on services offered by ["**name-of-project**"], enabling users to make informed decisions about their choices.
 - <strong>Testimonials:</strong> Showcases testimonials and highlights positive experiences from previous clients, fostering trust and credibility among potential customers.
@@ -285,13 +285,13 @@ The key features are:
 
 - **Header**
 
-  - "**name-of-project**" logo positioned [left|right|center]
+  - TravelEase logo positioned left
   - Appears on every page
 
 - **Nav bar**
 
   - Appers on every page
-  - Navigation bar on the [left|right|center]
+  - Navigation bar on the right
 
 - **Menu items**
 
@@ -300,61 +300,37 @@ The key features are:
 
 - **Footer**
 
-  - Includes a [contact information, contact form, newsletter, Resources and social links] (N/B: adjust as appropriate)
+  - Includes links to all social media platforms through the use of icons and text.
   - Appears on every page
 
 - **Home Page**
-  - _Hero image_ - appears at the top-[left|right|center] of the home page, below the header section.
-  - _Testimonials_ - just below the "**name-of-section**" section, responsively arrange to maximize various device screen width and give users a good experience.
-  - _Call to action buttons_ - provides an easy portal to other specific page of "**name-of-project**".
-- **Services** - Services has a dedicated page with a navigation link on both the navbar and one of the call-to-action buttons on the homepage.
+  - _Hero image_ - appears at the top-center of the home page, below the header section and acting as a background to both the header and the navbar.
+  - _Testimonials_ - just below the hero image section, responsively arrange to maximize various device screen width and give users a good experience.
+  - _Call to action buttons_ - provides an easy portal to booking and other pages
 - **Pricing** - Pricing and Plans has a dedicated page with a navigation link on both the navbar and one of the call-to-action buttons on the homepage.
 - **Our Team** - Our Teams has a dedicated page with a navigation link on both the navbar and one of the call-to-action buttons on the homepage.
-- **Gallery** - Gallery has a dedicated page with a navigation link on both the navbar and one of the call-to-action buttons on the homepage.
-- **Contact Us** - This is located at the [left|right|center] of the footer.
+- **Gallery** - Integrated numerous pictures throughout website to serve as a sort of gallery, instead of having an explicit page just for a gallery.
+- **Contact Us** - This is located at the left of the header.
 
 <h2 id="wireframes">Wireframes</h2>
 
 ### _File Organisation Tree_
 
 <p align="center">
-<img src="wireframe/file_org_tree.png" width="600" height="700">
+<img src="./assets/wireframes/directorytree.PNG" width="600" height="700">
 </p>
 
 ### _Home Page_
 
 <p align="center">
-<img src="wireframe/home-page.png" width="600" height="700">
+<img src="./assets/wireframes/index wireframe.PNG" width="800" height="700">
 </p>
 
-### _Services & Prices_
-
-<p align="center">
-<img src="wireframe/services-prices.png" width="600" height="900">
-</p>
-
-### _OurT eam_
-
-<p align="center">
-<img src="wireframe/our-team.png" width="600" height="900">
-</p>
-
-### _Gallery_
-
-<p align="center">
-<img src="wireframe/gallery.png" width="600" height="900">
-</p>
-
-### _Contact Us_
-
-<p align="center">
-<img src="wireframe/contact.png" width="600" height="900">
-</p>
 
 ### _Mobile View - Home Page_
 
 <p align="center">
-<img src="wireframe/mobile-home-page.png" width="400" height="1000">
+<img src="./assets/wireframes/mobilewireframe.PNG" width="800" height="1000">
 </p>
 
 <h2 id="design-and-styling">Design and Styling</h2>
@@ -379,11 +355,9 @@ Given the serene ambiance of the establishment, the website echoes this sentimen
 
 <h3 id="media">Media</h3>
 
-**Hero image** - short description and reason for selection
+**Hero image** - a mix of an iceberg / sky background that features lighter colours. Lighter colours are generally viewed as more positive, and we want our customers to associate our site with positivity, whether that be through colours or otherwise.
 
-**Contact section** - short description and reason for selection
-
-**Services** - short description and reason for selection
+**Contact section** - Our contact button is simply located in the top left of our page to ensure that it is abundantly clear to our customers that we are easy to contact. The page itself is currently work in progress.
 
 **Plans and Pricing** - short description and reason for selection
 
