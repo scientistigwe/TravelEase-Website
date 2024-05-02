@@ -402,14 +402,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to check my co
 
 <h2 id="user-story-testing">User Story Testing</h2>
 
-- **User Story 1:** [user story here]
+- [USER STORIES] Booking #17 "As a user, I want to access the Booking page easily, so that I can make a booking."
 
-  - [how it was implemented here]
+  - We created a page called booking.html, and made the booking button visible at the top of the page. We also added multiple CTA buttons to make booking even easier.
 
-  (N/B: Use image generated from https://ui.dev/amiresponsive to show the the page in 4 different devices)
 
   <p align="center">
-  <img src="assets/images/readme/logo-navbar.png" width="700" height="100%">
+  <img src="assets/images/bookinguserstory.PNG" width="700" height="100%">
   </p>
 
 - **User Story 2:** [user story here]
@@ -438,7 +437,7 @@ reapeat for all user stories
 
 <h2 id="final-product">Final Product</h2>
 
-- The product is live and can be seen on **[url of deployed site]**
+- The product is live and can be seen on **(https://scientistigwe.github.io/TravelEase-Website/index.html)**
 
 ### _Home Page_
 
@@ -456,8 +455,7 @@ reapeat for all user stories
 
 <h3 id="content">Content</h3>
 
-- All content was written by [**Your Name**]
-- Mention sections that was not original and the source where it was adopted from.
+- All content was written by [Chibueze C. Igwe, Henry Egedegbe, Andy Ancans]
 
 - I utilized the guidance provided by [Responsive navbar and hamburger menu](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci) to develop the responsive navbar and hamburger menu.
 
