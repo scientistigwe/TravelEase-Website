@@ -225,8 +225,8 @@ animation: heartbeat 2s ease;
 
 /*Teams Section */
 .teams-card{
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 700px;
     perspective: 1000px;
 }
 
@@ -265,23 +265,22 @@ animation: heartbeat 2s ease;
 background-color: rgba(143, 140, 140, 0.9);
 }
 .team-details h2 {
-    font-size: 2em;
+    font-size: 3em;
 font-weight: 500;
 text-align: center;
 color: #373dec;
 text-decoration: none;
     }
 .team-details p {
-font-size: 1.3em;
+font-size: 1.5em;
 font-weight: 300;
-padding-left: 10px;
+padding: 10px;
 }
 /* Footer */
 
 
 .footer-background {
     background-color: rgba(255, 255, 255, 0.6);
-    width:
 }
 
 .structure-wrap {
@@ -358,7 +357,7 @@ margin-bottom: 10px;
 /* Form */
 #contact-us {
     background-color: rgba(60, 60, 60, 0.6);
-    padding: 30px 50;
+    padding: 30px 50px;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
 }
@@ -435,13 +434,13 @@ font-weight: bold
 /*****
 ** DISCOVER PLACES PAGE **
 *****/
-#active-slide-indicator{
+.active-slide-indicator{
     display: inline-block;
 }
 
-#active-slide-indicator span{
-    width: 10px !important;
-    height: 10px !important;
+.active-slide-indicator span{
+    width: 10px;
+    height: 10px;
     background-color: white;
     border: 1px solid black;
     border-radius: 50%;
@@ -449,7 +448,7 @@ font-weight: bold
     display: inline-block;
 }
 
-#active-slide-indicator span.active{
+.active-slide-indicator span.active{
     background-color: #000;
 }
 

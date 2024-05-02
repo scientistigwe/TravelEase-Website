@@ -22,417 +22,798 @@
     <!-- Custom CSS link -->
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<div class="structure-wrapper">
+
 <body>
-    <!-- HEADER -->
-    <header>
-        <section id="places-header-id">
-            <!-- Background Image -->
-            <div class="header-section"></div>
+    <div class="structure-wrapper">
+        <!-- HEADER -->
+        <header>
+            <div id="places-header-id">
+                <!-- Background Image -->
+                <div class="header-section"></div>
 
-            <!-- First Navigation Bar -->
-            <nav class="navbar navbar-expand-lg">
+                <!-- First Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a href="../templates/contact-us.html" class="nav-menu-item"
+                                title="Link to Contact Us page">
+                                Contact Us
+                            </a>
+                        </div>
+
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <form class="d-flex">
+                                <div class="input-group" id="search-bar">
+                                    <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">
+                                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a href="../templates/booking.html" class="nav-menu-item booking" title="Booking page">
+                                Book Now
+                            </a>
+                        </div>
+                        <div class="nav-item dropdown nav-menu-item">
+                            <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Country
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="country-dropdown">
+                                <li><a class="dropdown-item" href="../templates/discover-places.html#ocean-beaches"><img
+                                            src="../assets/icons/spain_flag.png" alt="Spanish flag" width="30"
+                                            height="30">
+                                        Spain</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./templates/discover-places.html#snowy-countryside"><img
+                                            src="../assets/icons/iceland_flag.png" alt="Iceland flag" width="30"
+                                            height="30">
+                                        Iceland</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../templates/discover-places.html#mountain-and-nature"><img
+                                            src="../assets/icons/greece_flag.png" alt="Greece flag" width="30"
+                                            height="30">
+                                        Greece</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <hr>
+                <!-- Second Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items"
+                            type="button" aria-controls="menu-items" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a href="../index.html" class="navbar-brand">
+                            <img src="../assets/images/TravelEase-logo.png" alt="TravelEase Logo" width="100"
+                                height="100">
+                        </a>
+
+
+                        <div class="collapse navbar-collapse" id="menu-items">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menu-items" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Travel Insights
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                        <li><a class="dropdown-item" href="../templates/travel-time.html">Travel
+                                                Time</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="../templates/travel-tips.html">Travel
+                                                Tips</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../templates/reviews.html" class="nav-link" title="Link to reviews page">
+                                        Reviews
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle menu-items" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Discover Places
+                                    </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#mountain-and-nature">Mountain
+                                                side &
+                                                Nature's
+                                                beauty</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#ocean-beaches">Ocean view &
+                                                Beaches</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#snowy-countryside">Snowy &
+                                                Countryside
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../templates/plan-and-pricing.html">Plan and Pricing</a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../templates/about.html">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- Mountain and Nature Section -->
+            <section id="mountain-and-nature">
+                <h2 class="section-title">
+                    <span class="section-number">01</span>
+                    <span class="small-text">Top 5 Holiday destinations of 2024:</span>
+                    <span class="big-text">Mountain side & Nature's beauty</span>
+                </h2>
                 <div class="container-fluid">
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="../templates/contact-us.html" class="nav-menu-item" title="Link to Contact Us page">
-                            Contact Us
-                        </a>
-                    </div>
+                    <div class="row d-flex justify-content-evenly">
+                        <div class="col">
+                            <div class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-block w-100">
+                                            <div class="row ">
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <img src="../assets/images/Santorini.jpg"
+                                                            alt="Image of Santorini"
+                                                            class="rounded card-img-top img-fluid" width="450"
+                                                            height="400">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Santorini, Greece</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Destination Information</h5>
+                                                            <p>
+                                                            <ul>
+                                                                <li><strong>Location:</strong>
+                                                                    <p>Located in the southern Aegean Sea,
+                                                                        Santorini is part of the Cyclades island group
+                                                                        in
+                                                                        Greece.</p>
+                                                                </li>
+                                                                <li><strong>Description:</strong>
+                                                                    <p>Experience the enchanting beauty of Santorini,
+                                                                        known
+                                                                        for its iconic white-washed buildings, stunning
+                                                                        sunsets, and volcanic landscapes.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Climate:</strong>
+                                                                    <p>Enjoy a Mediterranean climate with warm,
+                                                                        dry summers and mild, wet winters, perfect for
+                                                                        exploring the island's treasures year-round.</p>
+                                                                </li>
+                                                                <li><strong>Culture and History:</strong>
+                                                                    <p>Dive into Santorini's rich
+                                                                        history, from ancient civilizations to its
+                                                                        present-day charm, reflected in its
+                                                                        architecture,
+                                                                        cuisine, and cultural traditions.</p>
+                                                                </li>
+                                                                <li><strong>Events and Festivals:</strong>
+                                                                    <p>Immerse yourself in
+                                                                        Santorini's vibrant culture during festivals
+                                                                        like
+                                                                        the Santorini Arts Festival or the International
+                                                                        Music Festival.</p>
+                                                                </li>
+                                                            </ul>
 
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <form class="d-flex">
-                            <div class="input-group" id="search-bar">
-                                <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
-                                    aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">
-                                    <i class="fa-solid fa-magnifying-glass-location"></i>
-                                </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card justify-content-between">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Travelers Guide:</h5>
+                                                            <p class="card-text">
+                                                            <ul>
+                                                                <li><strong>Accommodation:</strong>
+                                                                    <p>Choose from luxury resorts perched on
+                                                                        volcanic cliffs, cozy boutique hotels, or
+                                                                        traditional cave houses offering unique
+                                                                        accommodations with stunning vistas.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Dinning:</strong>
+                                                                    <p>Indulge in Mediterranean cuisine at seaside
+                                                                        tavernas, sampling fresh seafood, local
+                                                                        delicacies,
+                                                                        and renowned Santorinian wines.</p>
+                                                                </li>
+                                                                <li><strong>Activities:</strong>
+                                                                    <p>Explore picturesque villages, relax on
+                                                                        black sand beaches, or hike along scenic trails
+                                                                        with
+                                                                        breathtaking views of the Aegean Sea.</p>
+                                                                </li>
+                                                                <li><strong>Local Insights:</strong>
+                                                                    <p>Connect with locals to discover
+                                                                        hidden gems, learn about Santorini's winemaking
+                                                                        traditions, and explore off-the-beaten-path
+                                                                        destinations on the island.</p>
+                                                                </li>
+                                                            </ul>
+
+                                                            <a href="/templates/destination-categories.html"
+                                                                class="card-link"><span
+                                                                    class="btn btn-outline-primary">Book
+                                                                    now!</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-block w-100">
+                                            <div class="row ">
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <img src="../assets/images/Mykonos.jpeg" alt="Image of Mykonos"
+                                                            class="rounded  card-img-top img-fluid" width="450"
+                                                            height="400">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Mykonos, Greece</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Destination Information</h5>
+                                                            <p>
+                                                            <ul>
+                                                                <li><strong>Location:</strong>
+                                                                    <p>Located in the Aegean Sea, Mykonos is part
+                                                                        of the Cyclades island group in Greece.</p>
+                                                                </li>
+                                                                <li><strong>Description:</strong>
+                                                                    <p>Dive into the cosmopolitan charm of Mykonos,
+                                                                        famous
+                                                                        for its vibrant nightlife, beautiful beaches,
+                                                                        and
+                                                                        Cycladic architecture.</p>
+                                                                </li>
+                                                                <li><strong>Climate:</strong>
+                                                                    <p>Enjoy a Mediterranean climate with hot, dry
+                                                                        summers and mild, wet winters, ideal for soaking
+                                                                        up
+                                                                        the sun and exploring the island's treasures.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Culture and History:</strong>
+                                                                    <p>Discover Mykonos' storied past,
+                                                                        from ancient civilizations to its present-day
+                                                                        reputation as a playground for artists,
+                                                                        celebrities,
+                                                                        and jet-setters.</p>
+                                                                </li>
+                                                                <li><strong>Events and Festivals:</strong>
+                                                                    <p>Experience the energy of
+                                                                        Mykonos during summer parties, cultural events,
+                                                                        and
+                                                                        religious festivals like the Feast of Panagia
+                                                                        Paraportiani.</p>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center ">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Travelers Guide:</h5>
+                                                            <p class="card-text">
+                                                            <ul>
+                                                                <li><strong>Accommodation:</strong>
+                                                                    <p>Stay at luxury beachfront resorts,
+                                                                        chic boutique hotels, or traditional Cycladic
+                                                                        villas
+                                                                        offering elegant accommodations and personalized
+                                                                        service.</p>
+                                                                </li>
+                                                                <li><strong>Dinning:</strong>
+                                                                    <p> Delight your taste buds with Mediterranean
+                                                                        cuisine at seaside restaurants, savoring fresh
+                                                                        seafood, Greek specialties, and international
+                                                                        dishes
+                                                                        with a Mykonian twist.</p>
+                                                                </li>
+                                                                <li><strong>Activities:</strong>
+                                                                    <p>Party at world-renowned beach clubs, relax on
+                                                                        golden
+                                                                        sand beaches, or wander through the charming
+                                                                        streets
+                                                                        of Mykonos Town, adorned with
+                                                                        bougainvillea-covered
+                                                                        buildings.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Local Insights:</strong>
+                                                                    <p>Connect with locals to discover
+                                                                        secret beaches, local traditions, and cultural
+                                                                        landmarks, and learn about sustainable tourism
+                                                                        initiatives on the island.</p>
+                                                                </li>
+                                                            </ul>
+
+                                                            <a href="/templates/destination-categories.html"
+                                                                class="card-link"><span
+                                                                    class="btn btn-outline-primary">Book
+                                                                    now!</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-block w-100">
+                                            <div class="row ">
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <img src="../assets/images/crete.jpg" alt="Image of Crete"
+                                                            class="rounded  card-img-top img-fluid" width="450"
+                                                            height="400">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Crete, Greece</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Destination Information</h5>
+                                                            <p>
+                                                            <ul>
+                                                                <li><strong>Location:</strong>
+                                                                    <p>Located in the eastern Mediterranean Sea,
+                                                                        Crete is the southernmost and largest of the
+                                                                        Greek
+                                                                        islands.</p>
+                                                                </li>
+                                                                <li><strong>Description:</strong>
+                                                                    <p>Discover the diverse landscapes and rich history
+                                                                        of
+                                                                        Crete, Greece's largest island, renowned for its
+                                                                        archaeological sites, pristine beaches, and
+                                                                        mountainous terrain.</p>
+                                                                </li>
+                                                                <li><strong>Climate:</strong>
+                                                                    <p>Enjoy a Mediterranean climate with hot, dry
+                                                                        summers and mild, wet winters, providing the
+                                                                        perfect
+                                                                        backdrop for outdoor adventures and cultural
+                                                                        exploration.</p>
+                                                                </li>
+                                                                <li><strong>Culture and History:</strong>
+                                                                    <p>Immerse yourself in Crete's
+                                                                        ancient Minoan civilization, explore Venetian
+                                                                        fortresses and Byzantine monasteries, and
+                                                                        experience
+                                                                        traditional Cretan hospitality.</p>
+                                                                </li>
+                                                                <li><strong>Events and Festivals:</strong>
+                                                                    <p>Celebrate Crete's cultural
+                                                                        heritage at festivals like the Feast of Agios
+                                                                        Nikolaos or the Carnival of Rethymno, featuring
+                                                                        music, dance, and culinary delights.</p>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center ">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Travelers Guide:</h5>
+                                                            <p class="card-text">
+                                                            <ul>
+                                                                <li><strong>Accommodation:</strong>
+                                                                    <p>Choose from luxury beach resorts,
+                                                                        charming boutique hotels, or family-run
+                                                                        guesthouses,
+                                                                        offering accommodations to suit every traveler's
+                                                                        preferences and budget.</p>
+                                                                </li>
+                                                                <li><strong>Dinning:</strong>
+                                                                    <p>Indulge in Cretan cuisine at traditional
+                                                                        tavernas, sampling local specialties like dakos,
+                                                                        souvlaki, and fresh seafood, paired with Cretan
+                                                                        wine
+                                                                        or raki.</p>
+                                                                </li>
+                                                                <li><strong>Activities:</strong>
+                                                                    <p>Hike the Samaria Gorge, swim in
+                                                                        crystal-clear waters, or visit archaeological
+                                                                        sites
+                                                                        like the Palace of Knossos, home to the
+                                                                        legendary
+                                                                        Minotaur.</p>
+                                                                </li>
+                                                                <li><strong>Local Insights:</strong>
+                                                                    <p>Connect with locals to learn about
+                                                                        Cretan culture, participate in cooking classes
+                                                                        or
+                                                                        wine tastings, and discover lesser-known
+                                                                        attractions
+                                                                        off the tourist path.</p>
+                                                                </li>
+                                                            </ul>
+
+                                                            <a href="/templates/destination-categories.html"
+                                                                class="card-link"><span
+                                                                    class="btn btn-outline-primary">Book
+                                                                    now!</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="../templates/booking.html" class="nav-menu-item booking" title="Booking page">
-                            Book Now
-                        </a>
-                    </div>
-                    <div class="nav-item dropdown nav-menu-item">
-                        <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Country
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="country-dropdown">
-                            <li><a class="dropdown-item" href="../templates/discover-places.html#ocean-beaches"><img
-                                        src="../assets/icons/spain_flag.png" alt="Spanish flag" width="30" height="30">
-                                    Spain</a></li>
-                            <li><a class="dropdown-item" href="./templates/discover-places.html#snowy-countryside"><img
-                                        src="../assets/icons/iceland_flag.png" alt="Iceland flag" width="30"
-                                        height="30">
-                                    Iceland</a>
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="../templates/discover-places.html#mountain-and-nature"><img
-                                        src="../assets/icons/greece_flag.png" alt="Greece flag" width="30" height="30">
-                                    Greece</a></li>
-                        </ul>
+                        </div>
+                        <!-- Active slide indicator -->
+                        <div class="text-center mt-3">
+                            <div class="active-slide-indicator">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
-            <hr>
-            <!-- Second Navigation Bar -->
-            <nav class="navbar navbar-expand-lg">
+            </section>
+
+            <!-- Oceans View and Beaches Section -->
+            <section id="ocean-beaches">
+                <h2 class="section-title">
+                    <span class="section-number">02</span>
+                    <span class="small-text">Top 5 Holiday destinations of 2024:</span>
+                    <span class="big-text">Oceans view & Beaches</span>
+                </h2>
                 <div class="container-fluid">
-                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items" type="button"
-                        aria-controls="menu-items" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a href="../index.html" class="navbar-brand">
-                        <img src="../assets/images/TravelEase-logo.png" alt="TravelEase Logo" width="100" height="100">
-                    </a>
-
-
-                    <div class="collapse navbar-collapse" id="menu-items">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle menu-items" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Travel Insights
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item" href="../templates/travel-time.html">Travel Time</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="../templates/travel-tips.html">Travel Tips</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../templates/reviews.html" class="nav-link" title="Link to reviews page">
-                                    Reviews
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link dropdown-toggle menu-items" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Discover Places
-                                </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#mountain-and-nature">Mountain side &
-                                            Nature's
-                                            beauty</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#ocean-beaches">Ocean view &
-                                            Beaches</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#snowy-countryside">Snowy &
-                                            Countryside
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../templates/plan-and-pricing.html">Plan and Pricing</a>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="../templates/about.html">About</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
-    </header>
-
-    <!-- MAIN CONTENT -->
-    <main>
-        <!-- Mountain and Nature Section -->
-        <section id="mountain-and-nature">
-            <h2 class="section-title">
-                <span class="section-number">01</span>
-                <span class="small-text">Top 5 Holiday destinations of 2024:</span>
-                <span class="big-text">Mountain side & Nature's beauty</span>
-            </h2>
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-evenly">
-                    <div class="col">
-                        <div class="carousel slide" id="#places-slider" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="d-block w-100">
-                                        <div class="row " id="#site-1">
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <img src="../assets/images/Santorini.jpg"
-                                                        class="rounded card-img-top img-fluid" width="450" height="400">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Santorini, Greece</h5>
+                    <div class="row d-flex justify-content-evenly">
+                        <div class="col">
+                            <div class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-block w-100">
+                                            <div class="row " id="#costa-del-sol">
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <img src="../assets/images/costa-del-sol.png"
+                                                            alt="Image of Costa del Sol"
+                                                            class="rounded  card-img-top img-fluid">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Costa del Sol, Spain</h5>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Destination Information</h5>
-                                                        <p>
-                                                        <ul>
-                                                            <li><strong>Location:</strong>
-                                                                <p>Located in the southern Aegean Sea,
-                                                                    Santorini is part of the Cyclades island group in
-                                                                    Greece.</p>
-                                                            </li>
-                                                            <li><strong>Description:</strong>
-                                                                <p>Experience the enchanting beauty of Santorini, known
-                                                                    for its iconic white-washed buildings, stunning
-                                                                    sunsets, and volcanic landscapes.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Climate:</strong>
-                                                                <p>Enjoy a Mediterranean climate with warm,
-                                                                    dry summers and mild, wet winters, perfect for
-                                                                    exploring the island's treasures year-round.</p>
-                                                            </li>
-                                                            <li><strong>Culture and History:</strong>
-                                                                <p>Dive into Santorini's rich
-                                                                    history, from ancient civilizations to its
-                                                                    present-day charm, reflected in its architecture,
-                                                                    cuisine, and cultural traditions.</p>
-                                                            </li>
-                                                            <li><strong>Events and Festivals:</strong>
-                                                                <p>Immerse yourself in
-                                                                    Santorini's vibrant culture during festivals like
-                                                                    the Santorini Arts Festival or the International
-                                                                    Music Festival.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Destination Information</h5>
+                                                            <p>
+                                                            <ul>
+                                                                <li><strong>Location:</strong>
+                                                                    <p>Southern region of Andalusia, Spain</p>
+                                                                </li>
+                                                                <li><strong>Description:</strong>
+                                                                    <p>a.k.a the "Sun Coast," Costa del Sol boasts miles
+                                                                        of
+                                                                        sandy beaches, lively resorts, and charming
+                                                                        coastal
+                                                                        towns.</p>
+                                                                </li>
+                                                                <li><strong>Climate:</strong>
+                                                                    <p>Mediterranean climate with hot summers and mild
+                                                                        winters</p>
+                                                                </li>
+                                                                <li><strong>Culture and History:</strong>
+                                                                    <p>Explore Andalusian culture and historic landmarks
+                                                                        like the Alcazaba fortress, indulge in local
+                                                                        cuisine
+                                                                        influenced by Arabic and Mediterranean flavors
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Events and Festivals:</strong>
+                                                                    <p>Experience vibrant festivals such as the Feria de
+                                                                        Málaga and Semana Santa, filled with music,
+                                                                        dance,
+                                                                        and traditional celebrations.</p>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card justify-content-between">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Travelers Guide:</h5>
-                                                        <p class="card-text">
-                                                        <ul>
-                                                            <li><strong>Accommodation:</strong>
-                                                                <p>Choose from luxury resorts perched on
-                                                                    volcanic cliffs, cozy boutique hotels, or
-                                                                    traditional cave houses offering unique
-                                                                    accommodations with stunning vistas.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Dinning:</strong>
-                                                                <p>Indulge in Mediterranean cuisine at seaside
-                                                                    tavernas, sampling fresh seafood, local delicacies,
-                                                                    and renowned Santorinian wines.</p>
-                                                            </li>
-                                                            <li><strong>Activities:</strong>
-                                                                <p>Explore picturesque villages, relax on
-                                                                    black sand beaches, or hike along scenic trails with
-                                                                    breathtaking views of the Aegean Sea.</p>
-                                                            </li>
-                                                            <li><strong>Local Insights:</strong>
-                                                                <p>Connect with locals to discover
-                                                                    hidden gems, learn about Santorini's winemaking
-                                                                    traditions, and explore off-the-beaten-path
-                                                                    destinations on the island.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                        <a href="/templates/destination-categories.html"
-                                                            class="card-link"><span class="btn btn-outline-primary">Book
-                                                                now!</span></a>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center ">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Travelers Guide:</h5>
+                                                            <p class="card-text">
+                                                            <ul>
+                                                                <li><strong>Accommodation:</strong>
+                                                                    <p>Choose from a range of accommodation options
+                                                                        including luxury beachfront resorts (e.g.
+                                                                        Marbella
+                                                                        Club Hotel, Golf Resort & Spa), budget-friendly
+                                                                        hotels (e.g. Hotel Las Vegas, Malaga), and
+                                                                        vacation
+                                                                        rentals (e.g. Villa Sol y Mar, Nerja).</p>
+                                                                </li>
+                                                                <li><strong>Dinning:</strong>
+                                                                    <p>ample fresh seafood dishes at beachfront
+                                                                        chiringuitos
+                                                                        (beach bars) or dine at Michelin-starred
+                                                                        restaurants
+                                                                        offering innovative Andalusian cuisine</p>
+                                                                </li>
+                                                                <li><strong>Activities:</strong>
+                                                                    <p>water sports including swimming, snorkeling, and
+                                                                        windsurfing, or explore cultural attractions
+                                                                        like
+                                                                        the Picasso Museum in Málaga.</p>
+                                                                </li>
+                                                                <li><strong>Local Insights:</strong>
+                                                                    <p>Don't miss the opportunity to visit traditional
+                                                                        whitewashed villages like Frigiliana and Mijas,
+                                                                        where you can experience authentic Andalusian
+                                                                        culture and hospitality.</p>
+                                                                </li>
+                                                            </ul>
+
+                                                            <a href="/templates/destination-categories.html"
+                                                                class="card-link"><span
+                                                                    class="btn btn-outline-primary">Book
+                                                                    now!</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row " id="#site-2">
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <img src="../assets/images/Mykonos.jpeg"
-                                                        class="rounded  card-img-top img-fluid" width="450"
-                                                        height="400">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Mykonos, Greece</h5>
+                                    <div class="carousel-item">
+                                        <div class="d-block w-100">
+                                            <div class="row ">
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <img src="../assets/images/canary-island.webp"
+                                                            alt="Image of Canary Island"
+                                                            class="rounded card-img-top img-fluid" width="450"
+                                                            height="400">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Canary Islands, Spain</h5>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Destination Information</h5>
-                                                        <p>
-                                                        <ul>
-                                                            <li><strong>Location:</strong>
-                                                                <p>Located in the Aegean Sea, Mykonos is part
-                                                                    of the Cyclades island group in Greece.</p>
-                                                            </li>
-                                                            <li><strong>Description:</strong>
-                                                                <p>Dive into the cosmopolitan charm of Mykonos, famous
-                                                                    for its vibrant nightlife, beautiful beaches, and
-                                                                    Cycladic architecture.</p>
-                                                            </li>
-                                                            <li><strong>Climate:</strong>
-                                                                <p>Enjoy a Mediterranean climate with hot, dry
-                                                                    summers and mild, wet winters, ideal for soaking up
-                                                                    the sun and exploring the island's treasures.</p>
-                                                            </li>
-                                                            <li><strong>Culture and History:</strong>
-                                                                <p>Discover Mykonos' storied past,
-                                                                    from ancient civilizations to its present-day
-                                                                    reputation as a playground for artists, celebrities,
-                                                                    and jet-setters.</p>
-                                                            </li>
-                                                            <li><strong>Events and Festivals:</strong>
-                                                                <p>Experience the energy of
-                                                                    Mykonos during summer parties, cultural events, and
-                                                                    religious festivals like the Feast of Panagia
-                                                                    Paraportiani.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Destination Information</h5>
+                                                            <p>
+                                                            <ul>
+                                                                <li><strong>Location:</strong>
+                                                                    <p>An autonomous community of Spain, off the
+                                                                        Northwestern coast of Africa.</p>
+                                                                </li>
+                                                                <li><strong>Description:</strong>
+                                                                    <p>The Canary Islands offer diverse landscapes
+                                                                        ranging
+                                                                        from volcanic terrain to sandy beaches, along
+                                                                        with a
+                                                                        pleasant subtropical climate.</p>
+                                                                </li>
+                                                                <li><strong>Climate:</strong>
+                                                                    <p>Mild temperatures year-round, with warm summers
+                                                                        and
+                                                                        mild winters, making it an ideal destination for
+                                                                        beach lovers and outdoor enthusiasts.</p>
+                                                                </li>
+                                                                <li><strong>Culture and History:</strong>
+                                                                    <p>An islands' rich cultural heritage influenced by
+                                                                        indigenous Guanche traditions, Spanish
+                                                                        colonial history, and African and Latin American
+                                                                        influences.</p>
+                                                                </li>
+                                                                <li><strong>Events and Festivals:</strong>
+                                                                    <p>Vibrant festivals such as Carnival, celebrated
+                                                                        with
+                                                                        colorful parades, music, and dancing across the
+                                                                        islands.</p>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center ">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Travelers Guide:</h5>
-                                                        <p class="card-text">
-                                                        <ul>
-                                                            <li><strong>Accommodation:</strong>
-                                                                <p>Stay at luxury beachfront resorts,
-                                                                    chic boutique hotels, or traditional Cycladic villas
-                                                                    offering elegant accommodations and personalized
-                                                                    service.</p>
-                                                            </li>
-                                                            <li><strong>Dinning:</strong>
-                                                                <p> Delight your taste buds with Mediterranean
-                                                                    cuisine at seaside restaurants, savoring fresh
-                                                                    seafood, Greek specialties, and international dishes
-                                                                    with a Mykonian twist.</p>
-                                                            </li>
-                                                            <li><strong>Activities:</strong>
-                                                                <p>Party at world-renowned beach clubs, relax on golden
-                                                                    sand beaches, or wander through the charming streets
-                                                                    of Mykonos Town, adorned with bougainvillea-covered
-                                                                    buildings.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Local Insights:</strong>
-                                                                <p>Connect with locals to discover
-                                                                    secret beaches, local traditions, and cultural
-                                                                    landmarks, and learn about sustainable tourism
-                                                                    initiatives on the island.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                        <a href="/templates/destination-categories.html"
-                                                            class="card-link"><span class="btn btn-outline-primary">Book
-                                                                now!</span></a>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center ">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Travelers Guide:</h5>
+                                                            <p class="card-text">
+                                                            <ul>
+                                                                <li><strong>Accommodation:</strong>
+                                                                    <p>A variety of accommodations ranging from luxury
+                                                                        beachfront resorts (e.g The Ritz-Carlton, Abama)
+                                                                        to
+                                                                        boutique hotels (e.g. Hotel San Roque) and
+                                                                        charming
+                                                                        guesthouses (e.g. Casa Emblemática Arucas).</p>
+                                                                </li>
+                                                                <li><strong>Dinning:</strong>
+                                                                    <p>Sample Canarian cuisine featuring fresh seafood,
+                                                                        mojo
+                                                                        sauces, and traditional dishes like papas
+                                                                        arrugadas
+                                                                        (wrinkled potatoes) and gofio (toasted grain
+                                                                        flour).
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Activities:</strong>
+                                                                    <p>This is a short description of destination 1</p>
+                                                                </li>
+                                                                <li><strong>Local Insights:</strong>
+                                                                    <p>Explore local markets to discover artisanal
+                                                                        crafts
+                                                                        and products, and don't miss the opportunity to
+                                                                        visit cultural sites such as La Laguna on
+                                                                        Tenerife
+                                                                        or Cueva de los Verdes on Lanzarote.</p>
+                                                                </li>
+                                                            </ul>
+
+                                                            <a href="/templates/destination-categories.html"
+                                                                class="card-link"> <span
+                                                                    class="btn btn-outline-primary">Book now</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row " id="#site-3">
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <img src="../assets/images/crete.jpg"
-                                                        class="rounded  card-img-top img-fluid" width="450"
-                                                        height="400">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Crete, Greece</h5>
+                                    <div class="carousel-item">
+                                        <div class="d-block w-100">
+                                            <div class="row ">
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <img src="../assets/images/costa-brava.jpg"
+                                                            alt="Image of Costa Brva"
+                                                            class="rounded card-img-top img-fluid" width="450"
+                                                            height="400">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Costa Brava,Spain</h5>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Destination Information</h5>
-                                                        <p>
-                                                        <ul>
-                                                            <li><strong>Location:</strong>
-                                                                <p>Located in the eastern Mediterranean Sea,
-                                                                    Crete is the southernmost and largest of the Greek
-                                                                    islands.</p>
-                                                            </li>
-                                                            <li><strong>Description:</strong>
-                                                                <p>Discover the diverse landscapes and rich history of
-                                                                    Crete, Greece's largest island, renowned for its
-                                                                    archaeological sites, pristine beaches, and
-                                                                    mountainous terrain.</p>
-                                                            </li>
-                                                            <li><strong>Climate:</strong>
-                                                                <p>Enjoy a Mediterranean climate with hot, dry
-                                                                    summers and mild, wet winters, providing the perfect
-                                                                    backdrop for outdoor adventures and cultural
-                                                                    exploration.</p>
-                                                            </li>
-                                                            <li><strong>Culture and History:</strong>
-                                                                <p>Immerse yourself in Crete's
-                                                                    ancient Minoan civilization, explore Venetian
-                                                                    fortresses and Byzantine monasteries, and experience
-                                                                    traditional Cretan hospitality.</p>
-                                                            </li>
-                                                            <li><strong>Events and Festivals:</strong>
-                                                                <p>Celebrate Crete's cultural
-                                                                    heritage at festivals like the Feast of Agios
-                                                                    Nikolaos or the Carnival of Rethymno, featuring
-                                                                    music, dance, and culinary delights.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Destination Information</h5>
+                                                            <p>
+                                                            <ul>
+                                                                <li><strong>Location:</strong>
+                                                                    <p> Located in the Balearic Islands of Spain, Ibiza
+                                                                        is
+                                                                        situated in the Mediterranean Sea, off the
+                                                                        eastern
+                                                                        coast of the Iberian Peninsula.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Description:</strong>
+                                                                    <p>Ibiza is renowned for its vibrant nightlife,
+                                                                        pristine beaches, and bohemian atmosphere,
+                                                                        making it
+                                                                        a popular destination for partygoers and beach
+                                                                        lovers alike.</p>
+                                                                </li>
+                                                                <li><strong>Climate:</strong>
+                                                                    <p>Enjoy a Mediterranean climate with hot, dry
+                                                                        summers
+                                                                        and mild, wet winters, perfect for sunbathing
+                                                                        and
+                                                                        outdoor activities.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Culture and History:</strong>
+                                                                    <p> Discover the island's rich history, from ancient
+                                                                        Phoenician settlements to its hippie culture of
+                                                                        the
+                                                                        1960s, reflected in its architecture, art, and
+                                                                        music
+                                                                        scene.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Events and Festivals:</strong>
+                                                                    <p>Experience legendary nightlife at world-renowned
+                                                                        clubs like Pacha and Ushuaïa, and attend music
+                                                                        festivals such as the International Music
+                                                                        Summit.
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center ">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Travelers Guide:</h5>
-                                                        <p class="card-text">
-                                                        <ul>
-                                                            <li><strong>Accommodation:</strong>
-                                                                <p>Choose from luxury beach resorts,
-                                                                    charming boutique hotels, or family-run guesthouses,
-                                                                    offering accommodations to suit every traveler's
-                                                                    preferences and budget.</p>
-                                                            </li>
-                                                            <li><strong>Dinning:</strong>
-                                                                <p>Indulge in Cretan cuisine at traditional
-                                                                    tavernas, sampling local specialties like dakos,
-                                                                    souvlaki, and fresh seafood, paired with Cretan wine
-                                                                    or raki.</p>
-                                                            </li>
-                                                            <li><strong>Activities:</strong>
-                                                                <p>Hike the Samaria Gorge, swim in
-                                                                    crystal-clear waters, or visit archaeological sites
-                                                                    like the Palace of Knossos, home to the legendary
-                                                                    Minotaur.</p>
-                                                            </li>
-                                                            <li><strong>Local Insights:</strong>
-                                                                <p>Connect with locals to learn about
-                                                                    Cretan culture, participate in cooking classes or
-                                                                    wine tastings, and discover lesser-known attractions
-                                                                    off the tourist path.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                        <a href="/templates/destination-categories.html"
-                                                            class="card-link"><span class="btn btn-outline-primary">Book
-                                                                now!</span></a>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center ">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Travelers Guide:</h5>
+                                                            <p class="card-text">
+                                                            <ul>
+                                                                <li><strong>Accommodation:</strong>
+                                                                    <p>Choose from a range of accommodation
+                                                                        options including boutique hotels, seaside
+                                                                        resorts,
+                                                                        and charming guesthouses nestled along the
+                                                                        coastline.</p>
+                                                                </li>
+                                                                <li><strong>Dinning:</strong>
+                                                                    <p>Indulge in Catalan cuisine featuring fresh
+                                                                        seafood, paella, and tapas, or dine at
+                                                                        Michelin-starred restaurants offering innovative
+                                                                        Mediterranean dishes.</p>
+                                                                </li>
+                                                                <li><strong>Activities:</strong>
+                                                                    <p>Discover scenic coastal hiking trails,
+                                                                        enjoy water sports like snorkeling and kayaking,
+                                                                        or
+                                                                        visit cultural attractions such as the Dalí
+                                                                        Theatre-Museum in Figueres.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Local Insights:</strong>
+                                                                    <p>Don't miss the opportunity to sample
+                                                                        local wines from the Empordà region or
+                                                                        participate
+                                                                        in traditional festivals such as the Sardana
+                                                                        dance
+                                                                        in coastal towns like Calella de Palafrugell.
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+
+                                                            <a href="/templates/destination-categories.html"
+                                                                class="card-link"><span
+                                                                    class="btn btn-outline-primary">Book
+                                                                    now!</span></a>
+
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -441,295 +822,336 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Active slide indicator -->
-                    <div class="text-center mt-3">
-                        <div id="active-slide-indicator">
-                            <span class="active"></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <!-- Active slide indicator -->
+                        <div class="text-center mt-3">
+                            <div class="active-slide-indicator">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Oceans View and Beaches Section -->
-        <section id="ocean-beaches">
-            <h2 class="section-title">
-                <span class="section-number">02</span>
-                <span class="small-text">Top 5 Holiday destinations of 2024:</span>
-                <span class="big-text">Oceans view & Beaches</span>
-            </h2>
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-evenly">
-                    <div class="col">
-                        <div class="carousel slide" id="#places-slider" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="d-block w-100">
-                                        <div class="row " id="#costa-del-sol">
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <img src="../assets/images/costa-del-sol.png"
-                                                        class="rounded  card-img-top img-fluid">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Costa del Sol, Spain</h5>
+            <!-- Snowy and Countryside Section -->
+            <section id="snowy-countryside">
+                <h2 class="section-title">
+                    <span class="section-number">03</span>
+                    <span class="small-text">Top 5 Holiday destinations of 2024:</span>
+                    <span class="big-text">Snowy & Countryside</span>
+                </h2>
+                <div class="container-fluid">
+
+                    <div class="row d-flex justify-content-evenly">
+                        <div class="col">
+                            <div class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-block w-100">
+                                            <div class="row ">
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <img src="../assets/images/blue-lagoon.jpg"
+                                                            alt="Image of Blue Lagoon"
+                                                            class="rounded  card-img-top img-fluid" width="450"
+                                                            height="400">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Blue Lagoon, Iceland</h5>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Destination Information</h5>
-                                                        <p>
-                                                        <ul>
-                                                            <li><strong>Location:</strong>
-                                                                <p>Southern region of Andalusia, Spain</p>
-                                                            </li>
-                                                            <li><strong>Description:</strong>
-                                                                <p>a.k.a the "Sun Coast," Costa del Sol boasts miles of
-                                                                    sandy beaches, lively resorts, and charming coastal
-                                                                    towns.</p>
-                                                            </li>
-                                                            <li><strong>Climate:</strong>
-                                                                <p>Mediterranean climate with hot summers and mild
-                                                                    winters</p>
-                                                            </li>
-                                                            <li><strong>Culture and History:</strong>
-                                                                <p>Explore Andalusian culture and historic landmarks
-                                                                    like the Alcazaba fortress, indulge in local cuisine
-                                                                    influenced by Arabic and Mediterranean flavors</p>
-                                                            </li>
-                                                            <li><strong>Events and Festivals:</strong>
-                                                                <p>Experience vibrant festivals such as the Feria de
-                                                                    Málaga and Semana Santa, filled with music, dance,
-                                                                    and traditional celebrations.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Destination Information</h5>
+                                                            <p>
+                                                            <ul>
+                                                                <li><strong>Location:</strong>
+                                                                    <p>Situated in southwest Iceland, near the
+                                                                        capital city of Reykjavik.</p>
+                                                                </li>
+                                                                <li><strong>Description:</strong>
+                                                                    <p>Experience the soothing warmth and mineral-rich
+                                                                        waters of Iceland's iconic Blue Lagoon, nestled
+                                                                        amidst the lava fields of the Reykjanes
+                                                                        Peninsula.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Climate:</strong>
+                                                                    <p>Enjoy the comfort of geothermal warmth
+                                                                        year-round, surrounded by Iceland's rugged
+                                                                        landscapes.</p>
+                                                                </li>
+                                                                <li><strong>Culture and History:</strong>
+                                                                    <p>Immerse yourself in Icelandic
+                                                                        lore while relaxing in the lagoon's tranquil
+                                                                        waters,
+                                                                        known for their therapeutic properties.</p>
+                                                                </li>
+                                                                <li><strong>Events and Festivals:</strong>
+                                                                    <p>Marvel at the spectacle of the
+                                                                        northern lights or the midnight sun, adding
+                                                                        enchantment to your Blue Lagoon experience.</p>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center ">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Travelers Guide:</h5>
-                                                        <p class="card-text">
-                                                        <ul>
-                                                            <li><strong>Accommodation:</strong>
-                                                                <p>Choose from a range of accommodation options
-                                                                    including luxury beachfront resorts (e.g. Marbella
-                                                                    Club Hotel, Golf Resort & Spa), budget-friendly
-                                                                    hotels (e.g. Hotel Las Vegas, Malaga), and vacation
-                                                                    rentals (e.g. Villa Sol y Mar, Nerja).</p>
-                                                            </li>
-                                                            <li><strong>Dinning:</strong>
-                                                                <p>ample fresh seafood dishes at beachfront chiringuitos
-                                                                    (beach bars) or dine at Michelin-starred restaurants
-                                                                    offering innovative Andalusian cuisine</p>
-                                                            </li>
-                                                            <li><strong>Activities:</strong>
-                                                                <p>water sports including swimming, snorkeling, and
-                                                                    windsurfing, or explore cultural attractions like
-                                                                    the Picasso Museum in Málaga.</p>
-                                                            </li>
-                                                            <li><strong>Local Insights:</strong>
-                                                                <p>Don't miss the opportunity to visit traditional
-                                                                    whitewashed villages like Frigiliana and Mijas,
-                                                                    where you can experience authentic Andalusian
-                                                                    culture and hospitality.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                        <a href="/templates/destination-categories.html"
-                                                            class="card-link"><span class="btn btn-outline-primary">Book
-                                                                now!</span></a>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center ">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Travelers Guide:</h5>
+                                                            <p class="card-text">
+                                                            <ul>
+                                                                <li><strong>Accommodation:</strong>
+                                                                    <p>Choose from luxury accommodations
+                                                                        nearby, offering convenient access to the Blue
+                                                                        Lagoon and other attractions in southwest
+                                                                        Iceland.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Dinning:</strong>
+                                                                    <p>Delight your palate with Icelandic cuisine
+                                                                        at on-site restaurants, featuring fresh seafood
+                                                                        and
+                                                                        innovative culinary creations.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Activities:</strong>
+                                                                    <p> Indulge in ultimate relaxation at the Blue
+                                                                        Lagoon
+                                                                        Spa, pampering yourself with rejuvenating
+                                                                        treatments
+                                                                        amidst stunning natural surroundings.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Local Insights:</strong>
+                                                                    <p>Engage with locals to learn about
+                                                                        sustainable practices and lesser-known
+                                                                        attractions
+                                                                        in the Reykjanes Peninsula region.
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+
+                                                            <a href="/templates/destination-categories.html"
+                                                                class="card-link"><span
+                                                                    class="btn btn-outline-primary">Book
+                                                                    now!</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row " id="#site-2">
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <img src="../assets/images/Canary Island.webp"
-                                                        class="rounded card-img-top img-fluid" width="450" height="400">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Canary Islands, Spain</h5>
+                                    <div class="carousel-item">
+                                        <div class="d-block w-100">
+                                            <div class="row ">
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <img src="../assets/images/golden-circle.jpg"
+                                                            alt="Image of Golden Circle"
+                                                            class="rounded  card-img-top img-fluid" width="450"
+                                                            height="400">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Golden Circle, Iceland</h5>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Destination Information</h5>
-                                                        <p>
-                                                        <ul>
-                                                            <li><strong>Location:</strong>
-                                                                <p>An autonomous community of Spain, off the
-                                                                    Northwestern coast of Africa.</p>
-                                                            </li>
-                                                            <li><strong>Description:</strong>
-                                                                <p>The Canary Islands offer diverse landscapes ranging
-                                                                    from volcanic terrain to sandy beaches, along with a
-                                                                    pleasant subtropical climate.</p>
-                                                            </li>
-                                                            <li><strong>Climate:</strong>
-                                                                <p>Mild temperatures year-round, with warm summers and
-                                                                    mild winters, making it an ideal destination for
-                                                                    beach lovers and outdoor enthusiasts.</p>
-                                                            </li>
-                                                            <li><strong>Culture and History:</strong>
-                                                                <p>An islands' rich cultural heritage influenced by
-                                                                    indigenous Guanche traditions, Spanish
-                                                                    colonial history, and African and Latin American
-                                                                    influences.</p>
-                                                            </li>
-                                                            <li><strong>Events and Festivals:</strong>
-                                                                <p>Vibrant festivals such as Carnival, celebrated with
-                                                                    colorful parades, music, and dancing across the
-                                                                    islands.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Destination Information</h5>
+                                                            <ul>
+                                                                <li><strong>Location:</strong>
+                                                                    <p>Located in southwest Iceland, the Golden
+                                                                        Circle route includes Thingvellir National
+                                                                        Park,
+                                                                        Geysir Geothermal Area, and Gullfoss
+                                                                        Waterfall.
+                                                                        Climate: Encounter diverse climates along
+                                                                        the
+                                                                        Golden
+                                                                        Circle, from verdant valleys to volcanic
+                                                                        landscapes.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Description:</strong>
+                                                                    <p>Embark on a scenic journey through Iceland's
+                                                                        Golden
+                                                                        Circle, renowned for its geysers,
+                                                                        waterfalls,
+                                                                        and
+                                                                        historical sites.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Climate:</strong>
+                                                                    <p>This is a short description of destination 1
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Culture and History:</strong>
+                                                                    <p>Discover Viking heritage and
+                                                                        geological wonders as you explore this
+                                                                        iconic
+                                                                        Icelandic route.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Events and Festivals:</strong>
+                                                                    <p>Experience the magic of
+                                                                        Iceland's natural phenomena, including the
+                                                                        midnight
+                                                                        sun and the northern lights.
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center ">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Travelers Guide:</h5>
-                                                        <p class="card-text">
-                                                        <ul>
-                                                            <li><strong>Accommodation:</strong>
-                                                                <p>A variety of accommodations ranging from luxury
-                                                                    beachfront resorts (e.g The Ritz-Carlton, Abama) to
-                                                                    boutique hotels (e.g. Hotel San Roque) and charming
-                                                                    guesthouses (e.g. Casa Emblemática Arucas).</p>
-                                                            </li>
-                                                            <li><strong>Dinning:</strong>
-                                                                <p>Sample Canarian cuisine featuring fresh seafood, mojo
-                                                                    sauces, and traditional dishes like papas arrugadas
-                                                                    (wrinkled potatoes) and gofio (toasted grain flour).
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Activities:</strong>
-                                                                <p>This is a short description of destination 1</p>
-                                                            </li>
-                                                            <li><strong>Local Insights:</strong>
-                                                                <p>Explore local markets to discover artisanal crafts
-                                                                    and products, and don't miss the opportunity to
-                                                                    visit cultural sites such as La Laguna on Tenerife
-                                                                    or Cueva de los Verdes on Lanzarote.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                        <a href="/templates/destination-categories.html"
-                                                            class="card-link"> <span
-                                                                class="btn btn-outline-primary">Book now</span></a>
+                                                <div class="col-md-4 guide-card">
+                                                    <div class="card align-items-center">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Travelers Guide:</h5>
+                                                            <p class="card-text">
+                                                            <ul>
+                                                                <li><strong>Accommodation:</strong>
+                                                                    <p>Stay at charming guesthouses or
+                                                                        boutique hotels along the way, offering
+                                                                        comfortable
+                                                                        accommodations amidst Iceland's stunning
+                                                                        scenery.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Dinning:</strong>
+                                                                    <p>Sample local cuisine at restaurants and
+                                                                        cafes en route, savoring traditional Icelandic
+                                                                        dishes and international fare.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Activities:</strong>
+                                                                    <p>Engage in outdoor adventures like
+                                                                        hiking, horseback riding, and glacier tours
+                                                                        along
+                                                                        the Golden Circle route.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Local Insights:</strong>
+                                                                    <p>Connect with locals to discover
+                                                                        hidden gems and cultural insights along the
+                                                                        Golden
+                                                                        Circle, including lesser-known attractions and
+                                                                        off-the-beaten-path experiences.
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+
+                                                            <a href="/templates/destination-categories.html"
+                                                                class="card-link"><span
+                                                                    class="btn btn-outline-primary">Book
+                                                                    now!</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row " id="#site-2">
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <img src="../assets/images/costa-brava.jpg"
-                                                        class="rounded card-img-top img-fluid" width="450" height="400">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Costa Brava,Spain</h5>
+                                    <div class="carousel-item">
+                                        <div class="d-block w-100">
+                                            <div class="row ">
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <img src="../assets/images/jökulsárlón-glacier-lagoon.webp"
+                                                            alt="Image of Glacier Lagoon"
+                                                            class="rounded card-img-top img-fluid" width="450"
+                                                            height="400">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Jökulsárlón Glacier Lagoon, Iceland
+                                                            </h5>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Destination Information</h5>
-                                                        <p>
-                                                        <ul>
-                                                            <li><strong>Location:</strong>
-                                                                <p> Located in the Balearic Islands of Spain, Ibiza is
-                                                                    situated in the Mediterranean Sea, off the eastern
-                                                                    coast of the Iberian Peninsula.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Description:</strong>
-                                                                <p>Ibiza is renowned for its vibrant nightlife,
-                                                                    pristine beaches, and bohemian atmosphere, making it
-                                                                    a popular destination for partygoers and beach
-                                                                    lovers alike.</p>
-                                                            </li>
-                                                            <li><strong>Climate:</strong>
-                                                                <p>Enjoy a Mediterranean climate with hot, dry summers
-                                                                    and mild, wet winters, perfect for sunbathing and
-                                                                    outdoor activities.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Culture and History:</strong>
-                                                                <p> Discover the island's rich history, from ancient
-                                                                    Phoenician settlements to its hippie culture of the
-                                                                    1960s, reflected in its architecture, art, and music
-                                                                    scene.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Events and Festivals:</strong>
-                                                                <p>Experience legendary nightlife at world-renowned
-                                                                    clubs like Pacha and Ushuaïa, and attend music
-                                                                    festivals such as the International Music Summit.
-                                                                </p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center ">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Travelers Guide:</h5>
-                                                        <p class="card-text">
-                                                        <ul>
-                                                            <li><strong>Accommodation:</strong>
-                                                                <p>Choose from a range of accommodation
-                                                                    options including boutique hotels, seaside resorts,
-                                                                    and charming guesthouses nestled along the
-                                                                    coastline.</p>
-                                                            </li>
-                                                            <li><strong>Dinning:</strong>
-                                                                <p>Indulge in Catalan cuisine featuring fresh
-                                                                    seafood, paella, and tapas, or dine at
-                                                                    Michelin-starred restaurants offering innovative
-                                                                    Mediterranean dishes.</p>
-                                                            </li>
-                                                            <li><strong>Activities:</strong>
-                                                                <p>Discover scenic coastal hiking trails,
-                                                                    enjoy water sports like snorkeling and kayaking, or
-                                                                    visit cultural attractions such as the Dalí
-                                                                    Theatre-Museum in Figueres.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Local Insights:</strong>
-                                                                <p>Don't miss the opportunity to sample
-                                                                    local wines from the Empordà region or participate
-                                                                    in traditional festivals such as the Sardana dance
-                                                                    in coastal towns like Calella de Palafrugell.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                        <a href="/templates/destination-categories.html"
-                                                            class="card-link"><span class="btn btn-outline-primary">Book
-                                                                now!</span></a>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Destination Information</h5>
+                                                            <p>
+                                                            <ul>
+                                                                <li><strong>Location:</strong>
+                                                                    <p>Located in southeast Iceland, near
+                                                                        Vatnajökull Glacier, Europe's largest glacier.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Description:</strong>
+                                                                    <p>Discover the ethereal beauty of
+                                                                        Jökulsárlón Glacier Lagoon, where shimmering
+                                                                        icebergs drift amidst breathtaking landscapes.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Climate:</strong>
+                                                                    <p>Experience the icy wonderland of
+                                                                        Jökulsárlón, surrounded by Iceland's glacial
+                                                                        landscapes and rugged beauty.</p>
+                                                                </li>
+                                                                <li><strong>Culture and History:</strong>
+                                                                    <p>Explore the ancient ice
+                                                                        formations and geological marvels of this iconic
+                                                                        glacial lagoon.</p>
+                                                                </li>
+                                                                <li><strong>Events and Festivals:</strong>
+                                                                    <p>Witness the ever-changing
+                                                                        scenery of Jökulsárlón, where ice sculptures and
+                                                                        natural phenomena captivate visitors year-round.
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card align-items-center ">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Travelers Guide:</h5>
+                                                            <p class="card-text">
+                                                            <ul>
+                                                                <li><strong>Accommodation:</strong>
+                                                                    <p>Stay in nearby accommodations ranging
+                                                                        from cozy guesthouses to luxury lodges, offering
+                                                                        convenient access to Jökulsárlón and other
+                                                                        attractions in southeast Iceland.</p>
+                                                                </li>
+                                                                <li><strong>Dinning:</strong>
+                                                                    <p>Dine at local restaurants serving hearty
+                                                                        Icelandic fare and international cuisine,
+                                                                        enjoying
+                                                                        meals with panoramic views of the glacier
+                                                                        lagoon.
+                                                                    </p>
+                                                                </li>
+                                                                <li><strong>Activities:</strong>
+                                                                    <p>Embark on boat tours or kayak excursions
+                                                                        to get up close to the icebergs, or simply enjoy
+                                                                        the
+                                                                        stunning views from the shoreline.</p>
+                                                                </li>
+                                                                <li><strong>Local Insights:</strong>
+                                                                    <p>Connect with local guides and tour
+                                                                        operators to learn about the region's wildlife,
+                                                                        photography opportunities, and conservation
+                                                                        efforts
+                                                                        around Jökulsárlón Glacier Lagoon.</p>
+                                                                </li>
+                                                            </ul>
+
+                                                            <a href="/templates/destination-categories.html"
+                                                                class="card-link"><span
+                                                                    class="btn btn-outline-primary">Book
+                                                                    now!</span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -738,378 +1160,82 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Active slide indicator -->
-                    <div class="text-center mt-3">
-                        <div id="active-slide-indicator">
-                            <span class="active"></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Snowy and Countryside Section -->
-        <section id="snowy-countryside">
-            <h2 class="section-title">
-                <span class="section-number">03</span>
-                <span class="small-text">Top 5 Holiday destinations of 2024:</span>
-                <span class="big-text">Snowy & Countryside</span>
-            </h2>
-            <div class="container-fluid">
-
-                <div class="row d-flex justify-content-evenly">
-                    <div class="col">
-                        <div class="carousel slide" id="#places-slider" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="d-block w-100">
-                                        <div class="row " id="#site-1">
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <img src="../assets/images/Blue Lagoon.jpg"
-                                                        class="rounded  card-img-top img-fluid" width="450"
-                                                        height="400">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Blue Lagoon, Iceland</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Destination Information</h5>
-                                                        <p>
-                                                        <ul>
-                                                            <li><strong>Location:</strong>
-                                                                <p>Situated in southwest Iceland, near the
-                                                                    capital city of Reykjavik.</p>
-                                                            </li>
-                                                            <li><strong>Description:</strong>
-                                                                <p>Experience the soothing warmth and mineral-rich
-                                                                    waters of Iceland's iconic Blue Lagoon, nestled
-                                                                    amidst the lava fields of the Reykjanes Peninsula.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Climate:</strong>
-                                                                <p>Enjoy the comfort of geothermal warmth
-                                                                    year-round, surrounded by Iceland's rugged
-                                                                    landscapes.</p>
-                                                            </li>
-                                                            <li><strong>Culture and History:</strong>
-                                                                <p>Immerse yourself in Icelandic
-                                                                    lore while relaxing in the lagoon's tranquil waters,
-                                                                    known for their therapeutic properties.</p>
-                                                            </li>
-                                                            <li><strong>Events and Festivals:</strong>
-                                                                <p>Marvel at the spectacle of the
-                                                                    northern lights or the midnight sun, adding
-                                                                    enchantment to your Blue Lagoon experience.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center ">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Travelers Guide:</h5>
-                                                        <p class="card-text">
-                                                        <ul>
-                                                            <li><strong>Accommodation:</strong>
-                                                                <p>Choose from luxury accommodations
-                                                                    nearby, offering convenient access to the Blue
-                                                                    Lagoon and other attractions in southwest Iceland.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Dinning:</strong>
-                                                                <p>Delight your palate with Icelandic cuisine
-                                                                    at on-site restaurants, featuring fresh seafood and
-                                                                    innovative culinary creations.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Activities:</strong>
-                                                                <p> Indulge in ultimate relaxation at the Blue Lagoon
-                                                                    Spa, pampering yourself with rejuvenating treatments
-                                                                    amidst stunning natural surroundings.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Local Insights:</strong>
-                                                                <p>Engage with locals to learn about
-                                                                    sustainable practices and lesser-known attractions
-                                                                    in the Reykjanes Peninsula region.
-                                                                </p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                        <a href="/templates/destination-categories.html"
-                                                            class="card-link"><span class="btn btn-outline-primary">Book
-                                                                now!</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row " id="#site-2">
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <img src="../assets/images/Golden Circle.jpg"
-                                                        class="rounded  card-img-top img-fluid" width="450"
-                                                        height="400">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Golden Circle, Iceland</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Destination Information</h5>
-                                                        <p>
-                                                        <ul>
-                                                            <li><strong>Location:</strong>
-                                                                <p>Located in southwest Iceland, the Golden
-                                                                    Circle route includes Thingvellir National Park,
-                                                                    Geysir Geothermal Area, and Gullfoss Waterfall.
-                                                                    Climate: Encounter diverse climates along the Golden
-                                                                    Circle, from verdant valleys to volcanic landscapes.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Description:</strong>
-                                                                <p>Embark on a scenic journey through Iceland's Golden
-                                                                    Circle, renowned for its geysers, waterfalls, and
-                                                                    historical sites.</p>
-                                                            </li>
-                                                            <li><strong>Climate:</strong>
-                                                                <p>This is a short description of destination 1</p>
-                                                            </li>
-                                                            <li><strong>Culture and History:</strong>
-                                                                <p>Discover Viking heritage and
-                                                                    geological wonders as you explore this iconic
-                                                                    Icelandic route.</p>
-                                                            </li>
-                                                            <li><strong>Events and Festivals:</strong>
-                                                                <p>Experience the magic of
-                                                                    Iceland's natural phenomena, including the midnight
-                                                                    sun and the northern lights.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 guide-card">
-                                                <div class="card align-items-center">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Travelers Guide:</h5>
-                                                        <p class="card-text">
-                                                        <ul>
-                                                            <li><strong>Accommodation:</strong>
-                                                                <p>Stay at charming guesthouses or
-                                                                    boutique hotels along the way, offering comfortable
-                                                                    accommodations amidst Iceland's stunning scenery.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Dinning:</strong>
-                                                                <p>Sample local cuisine at restaurants and
-                                                                    cafes en route, savoring traditional Icelandic
-                                                                    dishes and international fare.</p>
-                                                            </li>
-                                                            <li><strong>Activities:</strong>
-                                                                <p>Engage in outdoor adventures like
-                                                                    hiking, horseback riding, and glacier tours along
-                                                                    the Golden Circle route</p>
-                                                            </li>
-                                                            <li><strong>Local Insights:</strong>
-                                                                <p>Connect with locals to discover
-                                                                    hidden gems and cultural insights along the Golden
-                                                                    Circle, including lesser-known attractions and
-                                                                    off-the-beaten-path experiences.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                        <a href="/templates/destination-categories.html"
-                                                            class="card-link"><span class="btn btn-outline-primary">Book
-                                                                now!</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row " id="#site-2">
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <img src="../assets/images/Jökulsárlón Glacier Lagoon.webp"
-                                                        class="rounded card-img-top img-fluid" width="450" height="400">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Jökulsárlón Glacier Lagoon, Iceland</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Destination Information</h5>
-                                                        <p>
-                                                        <ul>
-                                                            <li><strong>Location:</strong>
-                                                                <p>Located in southeast Iceland, near
-                                                                    Vatnajökull Glacier, Europe's largest glacier.</p>
-                                                            </li>
-                                                            <li><strong>Description:</strong>
-                                                                <p>Discover the ethereal beauty of
-                                                                    Jökulsárlón Glacier Lagoon, where shimmering
-                                                                    icebergs drift amidst breathtaking landscapes.</p>
-                                                            </li>
-                                                            <li><strong>Climate:</strong>
-                                                                <p>Experience the icy wonderland of
-                                                                    Jökulsárlón, surrounded by Iceland's glacial
-                                                                    landscapes and rugged beauty.</p>
-                                                            </li>
-                                                            <li><strong>Culture and History:</strong>
-                                                                <p>Explore the ancient ice
-                                                                    formations and geological marvels of this iconic
-                                                                    glacial lagoon.</p>
-                                                            </li>
-                                                            <li><strong>Events and Festivals:</strong>
-                                                                <p>Witness the ever-changing
-                                                                    scenery of Jökulsárlón, where ice sculptures and
-                                                                    natural phenomena captivate visitors year-round.
-                                                                </p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card align-items-center ">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Travelers Guide:</h5>
-                                                        <p class="card-text">
-                                                        <ul>
-                                                            <li><strong>Accommodation:</strong>
-                                                                <p>Stay in nearby accommodations ranging
-                                                                    from cozy guesthouses to luxury lodges, offering
-                                                                    convenient access to Jökulsárlón and other
-                                                                    attractions in southeast Iceland.</p>
-                                                            </li>
-                                                            <li><strong>Dinning:</strong>
-                                                                <p>Dine at local restaurants serving hearty
-                                                                    Icelandic fare and international cuisine, enjoying
-                                                                    meals with panoramic views of the glacier lagoon.
-                                                                </p>
-                                                            </li>
-                                                            <li><strong>Activities:</strong>
-                                                                <p>Embark on boat tours or kayak excursions
-                                                                    to get up close to the icebergs, or simply enjoy the
-                                                                    stunning views from the shoreline.</p>
-                                                            </li>
-                                                            <li><strong>Local Insights:</strong>
-                                                                <p>Connect with local guides and tour
-                                                                    operators to learn about the region's wildlife,
-                                                                    photography opportunities, and conservation efforts
-                                                                    around Jökulsárlón Glacier Lagoon.</p>
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                        <a href="/templates/destination-categories.html"
-                                                            class="card-link"><span class="btn btn-outline-primary">Book
-                                                                now!</span></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <!-- Active slide indicator -->
+                        <div class="text-center mt-3">
+                            <div class="active-slide-indicator">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
                         </div>
                     </div>
-                    <!-- Active slide indicator -->
-                    <div class="text-center mt-3">
-                        <div id="active-slide-indicator">
-                            <span class="active"></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <!-- FOOTER -->
+        <!-- FOOTER -->
         <footer class="container-fluid text-center py-3 footer-background">
-        <div class="row">
-            <div class="col-sm-12">
-                <h6 class="uppercase general-sub">Follow Us</h6>
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-                            <span class="sr-only">Tiktok</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-github" aria-hidden="true"></i>
-                            <span class="sr-only">Github</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-youtube-square" aria-hidden="true"></i>
-                            <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6 class="uppercase general-sub">Follow Us</h6>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                                <span class="sr-only">Tiktok</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span class="sr-only">Github</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-youtube-square" aria-hidden="true"></i>
+                                <span class="sr-only">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
-</div>
+        </footer>
 
-    <!-- Font awesome and Bootstrap Javascript link -->
-    <script src="https://kit.fontawesome.com/01058b62ac.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+        <!-- Font awesome and Bootstrap Javascript link -->
+        <script src="https://kit.fontawesome.com/01058b62ac.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap JS and jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+
+    </div>
 </body>
 
 </html>

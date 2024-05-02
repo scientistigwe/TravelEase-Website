@@ -24,574 +24,597 @@
 
 <body>
     <div class="structure-wrapper">
-    <!-- HEADER -->
-    <header>
-        <section id="header-id">
-            <!-- Background Image -->
-            <div class="header-section"></div>
+        <!-- HEADER -->
+        <header>
+            <section id="header-id">
+                <!-- Background Image -->
+                <div class="header-section"></div>
 
-            <!-- First Navigation Bar -->
-            <nav class="navbar navbar-expand-lg">
+                <!-- First Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a href="./templates/contact-us.html" class="nav-menu-item" title="Link to Contact Us page">
+                                Contact Us
+                            </a>
+                        </div>
+
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <form class="d-flex">
+                                <div class="input-group" id="search-bar">
+                                    <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">
+                                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a href="./templates/booking.html" class="nav-menu-item booking" title="Booking page">
+                                Book Now
+                            </a>
+                        </div>
+                        <div class="nav-item dropdown nav-menu-item">
+                            <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Country
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="country-dropdown">
+                                <li><a class="dropdown-item" href="./templates/discover-places.html#ocean-beaches"><img
+                                            src="./assets/icons/spain_flag.png" alt="Spanish flag" width="30"
+                                            height="30">
+                                        Spain</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./templates/discover-places.html#snowy-countryside"><img
+                                            src="./assets/icons/iceland_flag.png" alt="Iceland flag" width="30"
+                                            height="30">
+                                        Iceland</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="./templates/discover-places.html#mountain-and-nature"><img
+                                            src="./assets/icons/greece_flag.png" alt="Greece flag" width="30"
+                                            height="30">
+                                        Greece</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <hr>
+                <!-- Second Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items"
+                            type="button" aria-controls="menu-items" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a href="../index.html" class="navbar-brand">
+                            <img src="assets/images/TravelEase-logo.png" alt="TravelEase Logo" width="100" height="100">
+                        </a>
+
+
+                        <div class="collapse navbar-collapse" id="menu-items">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menu-items" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Travel Insights
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                        <li><a class="dropdown-item" href="./templates/travel-time.html">Travel Time</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./templates/travel-tips.html">Travel Tips</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./templates/reviews.html" class="nav-link" title="Link to reviews page">
+                                        Reviews
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menu-items" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Discover Places
+                                    </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                        <li><a class="dropdown-item"
+                                                href="./templates/discover-places.html#mountain-and-nature">Mountain
+                                                side &
+                                                Nature's
+                                                beauty</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="./templates/discover-places.html#ocean-beaches">Ocean view &
+                                                Beaches</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="./templates/discover-places.html#snowy-countryside">Snowy &
+                                                Countryside
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./templates/plan-and-pricing.html">Plan and Pricing</a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./templates/about.html">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="slogan">
+                    <h1><span>Travel</span> made simple, explore with <span>ease</span>!
+                    </h1>
+                </div>
+            </section>
+        </header>
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- Reviews Section -->
+            <section id="reviews">
+                <h2 class="section-title">
+                    <span class="section-number">01</span>
+                    <span class="small-text">What do clients say about us:</span>
+                    <span class="big-text">Reviews & Testimonies</span>
+                </h2>
+                <div class="container my-3">
+                    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- First Carousel Review Card -->
+                            <div class="carousel-item active">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nathan Adams</h5>
+                                        <div class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="card-text">TravelEase made our vacation seamless and stress-free! From
+                                            booking our flights to arranging accommodations, every detail was taken care
+                                            of
+                                            with professionalism and care. We had an amazing experience and can't wait
+                                            to
+                                            plan our next adventure with TravelEase!"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second Carousel Review Card -->
+                            <div class="carousel-item">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">James Turner</h5>
+                                        <div class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="card-text">"I highly recommend TravelEase for their exceptional
+                                            service
+                                            and attention to detail. They went above and beyond to ensure that our trip
+                                            exceeded our expectations. Their knowledgeable staff provided valuable
+                                            insights
+                                            and recommendations that made our vacation unforgettable."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Third Carousel Review Card -->
+                            <div class="carousel-item">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Emily Parker</h5>
+                                        <div class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="card-text">"TravelEase made our dream vacation a reality! Their
+                                            expertise
+                                            in travel planning and dedication to customer satisfaction truly set them
+                                            apart.
+                                            We felt confident and supported throughout the entire process, and our trip
+                                            exceeded all expectations. Thank you, TravelEase, for an incredible
+                                            experience!"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Third Carousel Review Card -->
+                            <div class="carousel-item">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Charlie Kingsworth</h5>
+                                        <div class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="card-text">"Booking with TravelEase was the best decision we made for
+                                            our
+                                            vacation. Their user-friendly website made it easy to find the perfect
+                                            destination and accommodations, and their responsive customer service team
+                                            answered all our questions promptly. We had a fantastic time and will
+                                            definitely
+                                            be using TravelEase for future travel plans."</p>
+                                    </div>
+                                </div>
+                            </div> <!-- Third Carousel Review Card -->
+                            <div class="carousel-item">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">William Piper</h5>
+                                        <div class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p class="card-text">"Our experience with TravelEase was outstanding from start
+                                            to
+                                            finish. Their personalized approach to travel planning ensured that every
+                                            aspect
+                                            of our trip was tailored to our preferences. We appreciated their attention
+                                            to
+                                            detail and commitment to making our vacation memorable. We can't thank
+                                            TravelEase enough for the wonderful memories!"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="hidden-text">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel"
+                            data-bs-slide="next">
+                            <span class="hidden-text">Next</span>
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+            <!-- End of Reviews Section -->
+
+            <!-- Destination Categories Section -->
+            <section id="discover-places">
+                <h2 class="section-title">
+                    <span class="section-number">02</span>
+                    <span class="small-text">Discover places with us:</span>
+                    <span class="big-text">Destination Categories</span>
+                </h2>
                 <div class="container-fluid">
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="./templates/contact-us.html" class="nav-menu-item" title="Link to Contact Us page">
-                            Contact Us
-                        </a>
-                    </div>
-
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <form class="d-flex">
-                            <div class="input-group" id="search-bar">
-                                <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
-                                    aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">
-                                    <i class="fa-solid fa-magnifying-glass-location"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="./templates/booking.html" class="nav-menu-item booking" title="Booking page">
-                            Book Now
-                        </a>
-                    </div>
-                    <div class="nav-item dropdown nav-menu-item">
-                        <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Country
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="country-dropdown">
-                            <li><a class="dropdown-item" href="./templates/discover-places.html#ocean-beaches"><img
-                                        src="./assets/icons/spain_flag.png" alt="Spanish flag" width="30" height="30">
-                                    Spain</a></li>
-                            <li><a class="dropdown-item" href="./templates/discover-places.html#snowy-countryside"><img
-                                        src="./assets/icons/iceland_flag.png" alt="Iceland flag" width="30" height="30">
-                                    Iceland</a>
-                            </li>
-                            <li><a class="dropdown-item"
-                                    href="./templates/discover-places.html#mountain-and-nature"><img
-                                        src="./assets/icons/greece_flag.png" alt="Greece flag" width="30" height="30">
-                                    Greece</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <hr>
-            <!-- Second Navigation Bar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items" type="button"
-                        aria-controls="menu-items" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a href="../index.html" class="navbar-brand">
-                        <img src="assets/images/TravelEase-logo.png" alt="TravelEase Logo" width="100" height="100">
-                    </a>
-
-
-                    <div class="collapse navbar-collapse" id="menu-items">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle menu-items" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Travel Insights
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item" href="./templates/travel-time.html">Travel Time</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="./templates/travel-tips.html">Travel Tips</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./templates/reviews.html" class="nav-link" title="Link to reviews page">
-                                    Reviews
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle menu-items" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Discover Places
-                                </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item"
-                                            href="./templates/discover-places.html#mountain-and-nature">Mountain side &
-                                            Nature's
-                                            beauty</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="./templates/discover-places.html#ocean-beaches">Ocean view &
-                                            Beaches</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="./templates/discover-places.html#snowy-countryside">Snowy &
-                                            Countryside
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./templates/plan-and-pricing.html">Plan and Pricing</a>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="./templates/about.html">About</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="slogan">
-                <h1><span>Travel</span> made simple, explore with <span>ease</span>!
-                </h1>
-            </div>
-        </section>
-    </header>
-    <!-- MAIN CONTENT -->
-    <main>
-        <!-- Reviews Section -->
-        <section id="reviews">
-            <h2 class="section-title">
-                <span class="section-number">01</span>
-                <span class="small-text">What do clients say about us:</span>
-                <span class="big-text">Reviews & Testimonies</span>
-            </h2>
-            <div class="container my-3">
-                <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- First Carousel Review Card -->
-                        <div class="carousel-item active">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Nathan Adams</h5>
-                                    <div class="star-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="card-text">TravelEase made our vacation seamless and stress-free! From
-                                        booking our flights to arranging accommodations, every detail was taken care of
-                                        with professionalism and care. We had an amazing experience and can't wait to
-                                        plan our next adventure with TravelEase!"
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Second Carousel Review Card -->
-                        <div class="carousel-item">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">James Turner</h5>
-                                    <div class="star-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="card-text">"I highly recommend TravelEase for their exceptional service
-                                        and attention to detail. They went above and beyond to ensure that our trip
-                                        exceeded our expectations. Their knowledgeable staff provided valuable insights
-                                        and recommendations that made our vacation unforgettable."</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Third Carousel Review Card -->
-                        <div class="carousel-item">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Emily Parker</h5>
-                                    <div class="star-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="card-text">"TravelEase made our dream vacation a reality! Their expertise
-                                        in travel planning and dedication to customer satisfaction truly set them apart.
-                                        We felt confident and supported throughout the entire process, and our trip
-                                        exceeded all expectations. Thank you, TravelEase, for an incredible experience!"
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Third Carousel Review Card -->
-                        <div class="carousel-item">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Charlie Kingsworth</h5>
-                                    <div class="star-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="card-text">"Booking with TravelEase was the best decision we made for our
-                                        vacation. Their user-friendly website made it easy to find the perfect
-                                        destination and accommodations, and their responsive customer service team
-                                        answered all our questions promptly. We had a fantastic time and will definitely
-                                        be using TravelEase for future travel plans."</p>
-                                </div>
-                            </div>
-                        </div> <!-- Third Carousel Review Card -->
-                        <div class="carousel-item">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">William Piper</h5>
-                                    <div class="star-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="card-text">"Our experience with TravelEase was outstanding from start to
-                                        finish. Their personalized approach to travel planning ensured that every aspect
-                                        of our trip was tailored to our preferences. We appreciated their attention to
-                                        detail and commitment to making our vacation memorable. We can't thank
-                                        TravelEase enough for the wonderful memories!"
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel Controls -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="hidden-text">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel"
-                        data-bs-slide="next">
-                        <span class="hidden-text">Next</span>
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-            </div>
-            
-        </section>
-        <!-- End of Reviews Section -->
-
-        <!-- Destination Categories Section -->
-        <section id="discover-places">
-            <h2 class="section-title">
-                <span class="section-number">02</span>
-                <span class="small-text">Discover places with us:</span>
-                <span class="big-text">Destination Categories</span>
-            </h2>
-            <div class="container-fluid">
-                <div class="row container-wrapper justify-content-between ">
-                    <div class="col-md-4 place-container">
-                        <div class="card">
-                            <img src="./assets/images/greece2.jpg" alt="Image of a location in Greece"
-                                class="card-img-top img-fluid">
-                            <div class="card-body">
-                                <h5 class="card-title">Mountainous Landscapes and Natural Beauty</h5>
-                                <p class="card-text">Immerse yourself in the breathtaking beauty of mountainous
-                                    landscapes and pristine natural environments.</p>
-
-                                <a href="./templates/discover-places.html#mountain-and-nature" class="card-link"><span
-                                        class="btn btn-outline-primary">Explore
-                                    </span></a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4  place-container">
-                        <div class="card">
-                            <img src="./assets/images/spain.jpg" alt="Image of a location in Spain"
-                                class="card-img-top img-fluid">
-                            <div class="card-body">
-                                <h5 class="card-title">OCEAN VIEW & BEACHES</h5>
-                                <p class="card-text">This is a perfect destination for you if your interest is
-                                    rooted in
-                                    scenic beauty and expansive vistas</p>
-                                <a href="./templates/destination-categories.html#ocean-beaches" class="card-link"><span
-                                        class="btn btn-outline-primary"> Explore</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4  place-container">
-                        <div class="card">
-                            <img src="./assets/images/iceland.jpg" alt="Image of a location in Iceland"
-                                class="card-img-top img-fluid">
-                            <div class="card-body">
-                                <h5 class="card-title">SNOWY AND COUNTRYSIDE</h5>
-                                <p class="card-text">If you are a lover of snowy landscapes and experiences or
-                                    countryside scenery and activities, we have got you covered. Explore below
-                                    collections and book today to experience it.</p>
-                                <a href="/templates/destination-categories.html#snowy-countryside"
-                                    class="card-link"><span class="btn btn-outline-primary">Explore
-                                    </span></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Travel Tips Section -->
-        <section id="travel-tips">
-            <h2 class="section-title">
-                <span class="section-number">03</span>
-                <span class="small-text">You want to know what is trending?</span>
-                <span class="big-text">Travel Tips and updates</span>
-            </h2>
-            <table class="table table-striped container-fluid">
-                <thead>
-                    <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Topic</th>
-                        <th scope="col">Destination Category</th>
-                        <th scope="col">Description</th>
-                        <th scope="col">Tips</th>
-                        <th scope="col">Source</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Beach Safety</td>
-                        <td>Ocean view & Beaches</td>
-                        <td>Practice beach safety by swimming only in designated areas with lifeguards and paying
-                            attention to warning flags for rip currents.</td>
-                        <td>Always swim with a buddy and obey lifeguard instructions.</td>
-                        <td>Travel Channel</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Northern Lights</td>
-                        <td>Snowy & Countryside</td>
-                        <td>Witness the mesmerizing Northern Lights dance across the Icelandic sky during the winter
-                            months, a breathtaking natural phenomenon.</td>
-                        <td>Opt for guided Northern Lights tours for the best viewing spots.</td>
-                        <td>Guide to Iceland</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Beach Safety</td>
-                        <td>Ocean view & Beaches</td>
-                        <td>Practice beach safety by swimming only in designated areas with lifeguards and paying
-                            attention to warning flags for rip currents.</td>
-                        <td>Always swim with a buddy and obey lifeguard instructions.</td>
-                        <td>Travel Channel</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Wildlife Spotting</td>
-                        <td>Mountain & Nature's Beauty</td>
-                        <td>Take a wildlife safari tour in Greece to spot native species like brown bears, wolves, and
-                            wild goats in their natural habitats.
-                        </td>
-                        <td>Remember to respect wildlife and observe from a safe distance.</td>
-                        <td>National Geographic</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Local Cuisine</td>
-                        <td>Mountain & Nature's Beauty</td>
-                        <td>Experience traditional Greek cuisine in mountain villages, featuring fresh seafood, grilled
-                            meats, and locally grown produce.</td>
-                        <td>Be sure to try local specialties like moussaka and souvlaki.</td>
-                        <td>Travel + Leisure</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>Glacier Hiking</td>
-                        <td>Snowy & Countryside</td>
-                        <td>Embark on a thrilling glacier hiking adventure on Iceland's stunning ice formations, led by
-                            experienced guides for a safe and memorable experience.</td>
-                        <td>Dress warmly in layers and wear sturdy hiking boots with crampons.</td>
-                        <td>Lonely Planet</td>
-                    </tr>
-                </tbody>
-            </table>
-            <a href="/templates/destination-categories.html#snowy-countryside" class="card-link"><span
-                    class="btn btn-outline-secondary">Read
-                    More!</span></a>
-        </section>
-
-        <!-- Meet the Team Section -->
-        <section id="team">
-            <h2 class="section-title">
-                <span class="section-number">04</span>
-                <span class="small-text">Meet the team <span style="color:red">(Hover for
-                        details)</span>:</span>
-                <span class="big-text">D 3-Muskateers</span>
-            </h2>
-            <div class="row container-wrapper justify-content-between">
-                <!-- Meet Chibueze C. Igwe -->
-                <div class="col-lg-4">
-                    <div class="teams-card">
-                        <div class="card-inner">
-                            <div class="row card-img">
-                                <img src="./assets/images/Igwe.jpg" alt="Chibueze C. Igwe"
+                    <div class="row container-wrapper justify-content-between ">
+                        <div class="col-md-4 place-container">
+                            <div class="card">
+                                <img src="./assets/images/greece2.jpg" alt="Image of a location in Greece"
                                     class="card-img-top img-fluid">
-                                <h3>Chibueze C. Igwe</h3>
-                            </div>
-                            <div class="row card-details  team-details">
-                                <a href="https://github.com/scientistigwe" target="_blank">
-                                    <h2>Chibueze C. Igwe</h2>
-                                </a>
-                                <p>My name is IGWE, Chibueze and I love coding.
-                                    <br><br>
-                                    As a Full Stack Developer, I excel in building dynamic web applications using
-                                    languages like HTML, CSS, JavaScript, and frameworks such as React, Bootstrap and
-                                    Angular. On the server side, I work with Node.js and Express, integrating databases
-                                    like MongoDB
-                                    or PostgreSQL.
-                                    <br><br>
-                                    In Data Analysis, I dive into datasets with Python, utilizing libraries like Pandas,
-                                    NumPy, and Matplotlib. SQL helps me query databases efficiently, while tools like
-                                    Tableau and Power BI add visual storytelling to my analyses.
-                                    <br><br>
-                                    As a Biomedical Scientist, I leverage laboratory techniques like PCR, ELISA etc,
-                                    alongside data analysis using statistical software like Python to uncover insights.
-                                    <br><br>
-                                    When I'm not immersed in coding or analyzing data, you'll find me exploring the
-                                    world and nature's beauty. There's an inexplicable calmness it brings, a harmony
-                                    that resonates deeply within me.
-                                </p>
-                            </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Mountainous Landscapes and Natural Beauty</h5>
+                                    <p class="card-text">Immerse yourself in the breathtaking beauty of mountainous
+                                        landscapes and pristine natural environments.</p>
 
+                                    <a href="./templates/discover-places.html#mountain-and-nature"
+                                        class="card-link"><span class="btn btn-outline-primary">Explore
+                                        </span></a>
+
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Meet Henry Egedegbe -->
-                <div class="col-lg-4">
-                    <div class="teams-card">
-                        <div class="card-inner">
-                            <div class="row card-img">
-                                <img src="./assets/images/henry.jpg" alt="Henry Egedegbe"
+                        <div class="col-md-4  place-container">
+                            <div class="card">
+                                <img src="./assets/images/spain.jpg" alt="Image of a location in Spain"
                                     class="card-img-top img-fluid">
-
-                                <h3>Henry Egedegbe</h3>
-
-                            </div>
-                            <div class="row card-details team-details">
-                                <a href="https://github.com/egedegbehenry" target="_blank">
-                                    <h2>Henry Egedegbe</h2>
-                                </a>
-
-                                <p>My name is Henry, I am a junior software developer driven by a passion for
-                                    technology and innovation. I am eager to apply my skills and creativity to solve
-                                    real-world problems through coding.
-                                    <br><br>
-                                    Proficient in programming and programming
-                                    languages such as Python, Java, and JavaScript, etc. I approach each project
-                                    with dedication and a thirst for knowledge.
-                                    <br><br>
-                                    Outside of coding, I enjoy exploring the latest developments in the tech world
-                                    and
-                                    collaborating with peers
-                                    to stay at the forefront of industry trends.
-                                    <br><br>
-                                    With a commitment to continuous
-                                    learning and a desire to make a meaningful impact, I am ready to embark on an
-                                    exciting journey in the world of tech.
-                                </p>
+                                <div class="card-body">
+                                    <h5 class="card-title">OCEAN VIEW & BEACHES</h5>
+                                    <p class="card-text">This is a perfect destination for you if your interest is
+                                        rooted in
+                                        scenic beauty and expansive vistas</p>
+                                    <a href="./templates/destination-categories.html#ocean-beaches"
+                                        class="card-link"><span class="btn btn-outline-primary"> Explore</span></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Meet Andy Ancans -->
-                <div class="col-lg-4">
-                    <div class="teams-card">
-                        <div class="card-inner">
-                            <div class="row card-img">
-                                <img src="./assets/images/andy.PNG" alt="Andy Ancans">
-                                <h3>Andy Ancans</h3>
-
-                            </div>
-                            <div class="row card-details  team-details">
-                                <a href="https://github.com/andyancans" target="_blank">
-                                    <h2>Andy Ancans</h2>
-                                </a>
-                                <p>My name is Andy, I'm a junior software developer with a deep passion for everything
-                                    tech.
-                                    Coming from a previous background of video editing, I'm excited to be able to
-                                    express my creativity through code.
-                                    <br><br>
-                                    I have a deep understanding of HTML, CSS and Bootstrap, alongside a very strong
-                                    foundational knowledge of Python and JavaScript.
-                                    I am always looking to improve my capabilities and skills, and I am excited to learn
-                                    new languages and frameworks.
-                                    <br><br>
-                                    Outside of coding and technology, I have a passion for cars, going to the gym and
-                                    cooking for myself, family and friends.
-                                </p>
+                        <div class="col-md-4  place-container">
+                            <div class="card">
+                                <img src="./assets/images/iceland.jpg" alt="Image of a location in Iceland"
+                                    class="card-img-top img-fluid">
+                                <div class="card-body">
+                                    <h5 class="card-title">SNOWY AND COUNTRYSIDE</h5>
+                                    <p class="card-text">If you are a lover of snowy landscapes and experiences or
+                                        countryside scenery and activities, we have got you covered. Explore below
+                                        collections and book today to experience it.</p>
+                                    <a href="/templates/destination-categories.html#snowy-countryside"
+                                        class="card-link"><span class="btn btn-outline-primary">Explore
+                                        </span></a>
+                                </div>
                             </div>
 
                         </div>
                     </div>
+                </div>
+            </section>
 
+            <!-- Travel Tips Section -->
+            <section id="travel-tips">
+                <h2 class="section-title">
+                    <span class="section-number">03</span>
+                    <span class="small-text">You want to know what is trending?</span>
+                    <span class="big-text">Travel Tips and updates</span>
+                </h2>
+                <table class="table table-striped container-fluid">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Topic</th>
+                            <th scope="col">Destination Category</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Tips</th>
+                            <th scope="col">Source</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Beach Safety</td>
+                            <td>Ocean view & Beaches</td>
+                            <td>Practice beach safety by swimming only in designated areas with lifeguards and paying
+                                attention to warning flags for rip currents.</td>
+                            <td>Always swim with a buddy and obey lifeguard instructions.</td>
+                            <td>Travel Channel</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Northern Lights</td>
+                            <td>Snowy & Countryside</td>
+                            <td>Witness the mesmerizing Northern Lights dance across the Icelandic sky during the winter
+                                months, a breathtaking natural phenomenon.</td>
+                            <td>Opt for guided Northern Lights tours for the best viewing spots.</td>
+                            <td>Guide to Iceland</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Beach Safety</td>
+                            <td>Ocean view & Beaches</td>
+                            <td>Practice beach safety by swimming only in designated areas with lifeguards and paying
+                                attention to warning flags for rip currents.</td>
+                            <td>Always swim with a buddy and obey lifeguard instructions.</td>
+                            <td>Travel Channel</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Wildlife Spotting</td>
+                            <td>Mountain & Nature's Beauty</td>
+                            <td>Take a wildlife safari tour in Greece to spot native species like brown bears, wolves,
+                                and
+                                wild goats in their natural habitats.
+                            </td>
+                            <td>Remember to respect wildlife and observe from a safe distance.</td>
+                            <td>National Geographic</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Local Cuisine</td>
+                            <td>Mountain & Nature's Beauty</td>
+                            <td>Experience traditional Greek cuisine in mountain villages, featuring fresh seafood,
+                                grilled
+                                meats, and locally grown produce.</td>
+                            <td>Be sure to try local specialties like moussaka and souvlaki.</td>
+                            <td>Travel + Leisure</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Glacier Hiking</td>
+                            <td>Snowy & Countryside</td>
+                            <td>Embark on a thrilling glacier hiking adventure on Iceland's stunning ice formations, led
+                                by
+                                experienced guides for a safe and memorable experience.</td>
+                            <td>Dress warmly in layers and wear sturdy hiking boots with crampons.</td>
+                            <td>Lonely Planet</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="/templates/destination-categories.html#snowy-countryside" class="card-link"><span
+                        class="btn btn-outline-secondary">Read
+                        More!</span></a>
+            </section>
+
+            <!-- Meet the Team Section -->
+            <section id="team">
+                <h2 class="section-title">
+                    <span class="section-number">04</span>
+                    <span class="small-text">Meet the team <span style="color:red">(Hover for
+                            details)</span>:</span>
+                    <span class="big-text">D 3-Muskateers</span>
+                </h2>
+                <div class="row container-wrapper justify-content-between">
+
+                    <!-- Meet Henry Egedegbe -->
+                    <div class="col-lg-4">
+                        <div class="teams-card">
+                            <div class="card-inner">
+                                <div class="row card-img">
+                                    <img src="./assets/images/henry.jpg" alt="Henry Egedegbe"
+                                        class="card-img-top img-fluid">
+
+                                    <h3>Henry Egedegbe</h3>
+
+                                </div>
+                                <div class="row card-details team-details">
+                                    <a href="https://github.com/egedegbehenry" target="_blank">
+                                        <h2>Henry Egedegbe</h2>
+                                    </a>
+
+                                    <p>My name is Henry, I am a junior software developer driven by a passion for
+                                        technology and innovation. I am eager to apply my skills and creativity to solve
+                                        real-world problems through coding.
+                                        <br><br>
+                                        Proficient in programming and programming
+                                        languages such as Python, Java, and JavaScript, etc. I approach each project
+                                        with dedication and a thirst for knowledge.
+                                        <br><br>
+                                        Outside of coding, I enjoy exploring the latest developments in the tech world
+                                        and
+                                        collaborating with peers
+                                        to stay at the forefront of industry trends.
+                                        <br><br>
+                                        With a commitment to continuous
+                                        learning and a desire to make a meaningful impact, I am ready to embark on an
+                                        exciting journey in the world of tech.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Meet Andy Ancans -->
+                    <div class="col-lg-4">
+                        <div class="teams-card">
+                            <div class="card-inner">
+                                <div class="row card-img">
+                                    <img src="./assets/images/andy.PNG" alt="Andy Ancans">
+                                    <h3>Andy Ancans</h3>
+
+                                </div>
+                                <div class="row card-details  team-details">
+                                    <a href="https://github.com/andyancans" target="_blank">
+                                        <h2>Andy Ancans</h2>
+                                    </a>
+                                    <p>My name is Andy, I'm a junior software developer with a deep passion for
+                                        everything
+                                        tech.
+                                        Coming from a previous background of video editing, I'm excited to be able to
+                                        express my creativity through code.
+                                        <br><br>
+                                        I have a deep understanding of HTML, CSS and Bootstrap, alongside a very strong
+                                        foundational knowledge of Python and JavaScript.
+                                        I am always looking to improve my capabilities and skills, and I am excited to
+                                        learn
+                                        new languages and frameworks.
+                                        <br><br>
+                                        Outside of coding and technology, I have a passion for cars, going to the gym
+                                        and
+                                        cooking for myself, family and friends.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Meet Chibueze C. Igwe -->
+                    <div class="col-lg-4">
+                        <div class="teams-card">
+                            <div class="card-inner">
+                                <div class="row card-img">
+                                    <img src="./assets/images/Igwe.jpg" alt="Chibueze C. Igwe"
+                                        class="card-img-top img-fluid">
+                                    <h3>Chibueze C. Igwe</h3>
+                                </div>
+                                <div class="row card-details  team-details">
+                                    <a href="https://github.com/scientistigwe" target="_blank">
+                                        <h2>Chibueze C. Igwe</h2>
+                                    </a>
+                                    <p>My name is IGWE, Chibueze and I love coding.
+                                        <br><br>
+                                        As a Full Stack Developer, I excel in building dynamic web applications using
+                                        languages like HTML, CSS, JavaScript, and frameworks such as Bootstrap.
+                                        <br><br>
+                                        In Data Analysis, I dive into datasets with Python, utilizing libraries like
+                                        Pandas,
+                                        and NumPy. SQL helps me query databases efficiently, while tools like
+                                        Tableau and Power BI add visual storytelling to my analyses.
+                                        <br><br>
+                                        As a Biomedical Scientist, I leverage laboratory techniques like PCR, ELISA etc,
+                                        alongside data analysis to uncover insights.
+                                        <br><br>
+                                        When I'm not immersed in coding or analyzing data, you'll find me exploring the
+                                        world and nature's beauty. There's an inexplicable calmness it brings, a harmony
+                                        that resonates deeply within me.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid text-center py-3 footer-background">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6 class="uppercase general-sub">Follow Us</h6>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                                <span class="sr-only">Tiktok</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span class="sr-only">Github</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-youtube-square" aria-hidden="true"></i>
+                                <span class="sr-only">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="container-fluid text-center py-3 footer-background">
-        <div class="row">
-            <div class="col-sm-12">
-                <h6 class="uppercase general-sub">Follow Us</h6>
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-                            <span class="sr-only">Tiktok</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-github" aria-hidden="true"></i>
-                            <span class="sr-only">Github</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-youtube-square" aria-hidden="true"></i>
-                            <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
- </div>
+        </footer>
+    </div>
     <!-- Font awesome and Bootstrap Javascript link -->
     <script src="https://kit.fontawesome.com/01058b62ac.js" crossorigin="anonymous"></script>
 
