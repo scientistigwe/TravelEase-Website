@@ -149,16 +149,16 @@ transform: scale(1.1)
 
 @keyframes slideBackground {
     0% {
-        background-image: url("/assets/images/sky2.jpg");
+        background-image: url("../images/sky2.jpg");
     }
     33.33% {
-        background-image: url("/assets/images/sky.jpg");
+        background-image: url("../images/sky.jpg");
     }
     66.66% {
-        background-image: url("/assets/images/sky3.jpg");
+        background-image: url("../images/sky3.jpg");
     }
     100% {
-        background-image: url("/assets/images/sky2.jpg");
+        background-image: url("../images/sky2.jpg");
     }
 }
 
