@@ -19,297 +19,321 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Custom CSS link -->
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <div class="structure-wrapper">
-<body>
-    <!-- HEADER -->
-    <header>
-        <section id="reviews-header-id">
-            <!-- Background Image -->
-            <div class="header-section"></div>
-
-            <!-- First Navigation Bar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="../templates/contact-us.html" class="nav-menu-item" alt="Link to Contact Us page">
-                            Contact Us
-                        </a>
-                    </div>
-
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <form class="d-flex">
-                            <div class="input-group" id="search-bar">
-                                <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
-                                    aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">
-                                    <i class="fa-solid fa-magnifying-glass-location"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="../templates/booking.html" class="nav-menu-item booking" alt="Booking page">
-                            Book Now
-                        </a>
-                    </div>
-                    <div class="nav-item dropdown nav-menu-item">
-                        <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Country
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="country-dropdown">
-                            <li><a class="dropdown-item" href="../templates/discover-places.html#ocean-beaches"
-                                    bg-dark><img src="../assets/icons/spain_flag.png" alt="Spainish flag" width="30"
-                                        height="30">
-                                    Spain</a></li>
-                            <li><a class="dropdown-item" href="../templates/discover-places.html#snowy-countryside"
-                                    bg-dark><img src="../assets/icons/iceland_flag.png" alt="Iceland flag" width="30"
-                                        height="30">
-                                    Iceland</a>
-                            </li>
-                            <li><a class="dropdown-item" href="../templates/discover-places.html#mountain-and-nature"
-                                    bg-dark><img src="../assets/icons/greece_flag.png" alt="Greece flag" width="30"
-                                        height="30">
-                                    Greece</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <hr>
-            <!-- Second Navigation Bar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items" type="button"
-                        aria-controls="menu-items" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a href="../index.html" class="navbar-brand">
-                        <img src="../assets/images/TravelEase-logo.png" width="100" height="100">
-                    </a>
-
-
-                    <div class="collapse navbar-collapse" id="menu-items">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="menu-items" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Travel Insights
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item" href="../templates/travel-time.html">Travel Time</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="../templates/travel-tips.html">Travel Tips</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../templates/reviews.html" class="nav-link active" alt="Link to reviews page">
-                                    Reviews
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="menu-items" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Discover Places
-                                </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#mountain-and-nature">Mountain side &
-                                            Nature's
-                                            beauty</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#ocean-beaches">Ocean view &
-                                            Beaches</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#snowy-countryside">Snowy &
-                                            Countryside</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../templates/plan-and-pricing.html">Plan and Pricing</a>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="../templates/about.html">About</a>
-                            </li>
-                        </ul>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
-    </header>
 
     <body>
-        <!-- Reviews Section -->
-        <section class="container">
-            <h2 class="text-center reviews-text">What do some of our <span class="customer-title">customers</span> say?
-            </h2>
+        <!-- HEADER -->
+        <header>
+            <section id="reviews-header-id">
+                <!-- Background Image -->
+                <div class="header-section"></div>
+
+                <!-- First Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a href="../templates/contact-us.html" class="nav-menu-item"
+                                title="Link to Contact Us page">
+                                Contact Us
+                            </a>
+                        </div>
+
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <form class="d-flex">
+                                <div class="input-group" id="search-bar">
+                                    <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">
+                                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a href="../templates/booking.html" class="nav-menu-item booking active"
+                                title="Booking page">
+                                Book Now
+                            </a>
+                        </div>
+                        <div class="nav-item dropdown nav-menu-item">
+                            <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Country
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="country-dropdown">
+                                <li><a class="dropdown-item" href="../templates/discover-places.html#ocean-beaches"><img
+                                            src="../assets/icons/spain_flag.png" alt="Spanish flag" width="30"
+                                            height="30">
+                                        Spain</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./templates/discover-places.html#snowy-countryside"><img
+                                            src="../assets/icons/iceland_flag.png" alt="Iceland flag" width="30"
+                                            height="30">
+                                        Iceland</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../templates/discover-places.html#mountain-and-nature"><img
+                                            src="../assets/icons/greece_flag.png" alt="Greece flag" width="30"
+                                            height="30">
+                                        Greece</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <hr>
+                <!-- Second Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items"
+                            type="button" aria-controls="menu-items" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a href="../index.html" class="navbar-brand">
+                            <img src="../assets/images/TravelEase-logo.png" alt="TravelEase Logo" width="100"
+                                height="100">
+                        </a>
+
+
+                        <div class="collapse navbar-collapse" id="menu-items">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menu-items" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Travel Insights
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                        <li><a class="dropdown-item" href="../templates/travel-time.html">Travel
+                                                Time</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="../templates/travel-tips.html">Travel
+                                                Tips</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../templates/reviews.html" class="nav-link" title="Link to reviews page">
+                                        Reviews
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menu-items" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Discover Places
+                                    </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#mountain-and-nature">Mountain
+                                                side &
+                                                Nature's
+                                                beauty</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#ocean-beaches">Ocean view &
+                                                Beaches</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#snowy-countryside">Snowy &
+                                                Countryside
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../templates/plan-and-pricing.html">Plan and Pricing</a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../templates/about.html">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </header>
+
+        <main>
+            <!-- Reviews Section -->
+            <section class="container">
+                <h2 class="text-center reviews-text">What do some of our <span class="customer-title">customers</span>
+                    say?
+                </h2>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center card-background">
+                                <h4 class="card-title">Ethan Moore</h4>
+                                <!-- Decided to use text-based stars due to code readability and simplicity -->
+                                <p class="card-text">★★★★★</p>
+                                <!-- -->
+                                <p class="card-text">"Iceland's rugged landscapes were a breeze to navigate with
+                                    TravelEase's expert planning. From hiking excursions to relaxing in Blue Lagoon,
+                                    they
+                                    arranged an unforgettable trip. Their commitment to quality made our vacation
+                                    exceptional!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center card-background">
+                                <h4 class="card-title">Sarah Jennings</h4>
+                                <p class="card-text">★★★★★</p>
+                                <p class="card-text">"TravelEase turned our Spanish getaway into a dream come true! From
+                                    our
+                                    flights to Barcelona to exploring the coastal towns, everything was meticulously
+                                    planned. Their service was incredibly professional, and we can't wait for our next
+                                    trip
+                                    with them!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center card-background">
+                                <h4 class="card-title">Jake Harmon</h4>
+                                <p class="card-text">★★★★★</p>
+                                <p class="card-text">"Thanks to TravelEase, our journey to Iceland was nothing short of
+                                    breathtaking. They arranged all our excursions, including the glaciers and hot
+                                    springs,
+                                    making it a completely stress-free experience. Their dedication to customer
+                                    satisfaction
+                                    is outstanding!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center card-background">
+                                <h4 class="card-title">Mia Wang</h4>
+                                <p class="card-text">★★★★★</p>
+                                <p class="card-text">"Our Greek island adventure organized by TravelEase was magical!
+                                    They
+                                    took care of everything from ferry tickets to charming seaside resorts. Their
+                                    attention
+                                    to detail made our vacation truly relaxing. We’re definitely planning another trip
+                                    with
+                                    TravelEase!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center card-background">
+                                <h4 class="card-title">Carlos Rodriguez</h4>
+                                <p class="card-text">★★★★★</p>
+                                <p class="card-text">"TravelEase made our trip to Spain incredibly easy and enjoyable.
+                                    From
+                                    historical tours in Madrid to culinary experiences in Valencia, everything was
+                                    perfectly
+                                    organized. Their team is professional and caring—highly recommend them for your
+                                    travels!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center card-background">
+                                <h4 class="card-title">Amelia Brooks</h4>
+                                <p class="card-text">★★★★★</p>
+                                <p class="card-text">"Discovering Iceland with TravelEase was an epic adventure! They
+                                    handled all our arrangements flawlessly, from the Northern Lights tours to the
+                                    geothermal spas. We had a spectacular time and appreciated their excellent service
+                                    throughout."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center card-background">
+                                <h4 class="card-title">Benjamin Choi</h4>
+                                <p class="card-text">★★★★★</p>
+                                <p class="card-text">"Thanks to TravelEase, our Greek escapade was phenomenal! They
+                                    arranged
+                                    our visits to ancient sites and beautiful beaches seamlessly. Their planning and
+                                    coordination were perfect. We look forward to more travels with TravelEase!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center card-background">
+                                <h4 class="card-title">Natalie Porter</h4>
+                                <p class="card-text">★★★★★</p>
+                                <p class="card-text">"Our cultural exploration of Spain with TravelEase was outstanding.
+                                    They organized everything from wine tastings to flamenco shows with such ease. The
+                                    trip
+                                    was hassle-free and packed with fun activities, thanks to their expertise."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="container-fluid text-center py-3 footer-background">
             <div class="row">
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center card-background">
-                            <h4 class="card-title">Ethan Moore</h4>
-                            <!-- Decided to use text-based stars due to code readability and simplicity -->
-                            <p class="card-text">★★★★★</p>
-                            <!-- -->
-                            <p class="card-text">"Iceland's rugged landscapes were a breeze to navigate with
-                                TravelEase's expert planning. From hiking excursions to relaxing in Blue Lagoon, they
-                                arranged an unforgettable trip. Their commitment to quality made our vacation
-                                exceptional!"</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center card-background">
-                            <h4 class="card-title">Sarah Jennings</h4>
-                            <p class="card-text">★★★★★</p>
-                            <p class="card-text">"TravelEase turned our Spanish getaway into a dream come true! From our
-                                flights to Barcelona to exploring the coastal towns, everything was meticulously
-                                planned. Their service was incredibly professional, and we can't wait for our next trip
-                                with them!"</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center card-background">
-                            <h4 class="card-title">Jake Harmon</h4>
-                            <p class="card-text">★★★★★</p>
-                            <p class="card-text">"Thanks to TravelEase, our journey to Iceland was nothing short of
-                                breathtaking. They arranged all our excursions, including the glaciers and hot springs,
-                                making it a completely stress-free experience. Their dedication to customer satisfaction
-                                is outstanding!"</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center card-background">
-                            <h4 class="card-title">Mia Wang</h4>
-                            <p class="card-text">★★★★★</p>
-                            <p class="card-text">"Our Greek island adventure organized by TravelEase was magical! They
-                                took care of everything from ferry tickets to charming seaside resorts. Their attention
-                                to detail made our vacation truly relaxing. We’re definitely planning another trip with
-                                TravelEase!"</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center card-background">
-                            <h4 class="card-title">Carlos Rodriguez</h4>
-                            <p class="card-text">★★★★★</p>
-                            <p class="card-text">"TravelEase made our trip to Spain incredibly easy and enjoyable. From
-                                historical tours in Madrid to culinary experiences in Valencia, everything was perfectly
-                                organized. Their team is professional and caring—highly recommend them for your
-                                travels!"</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center card-background">
-                            <h4 class="card-title">Amelia Brooks</h4>
-                            <p class="card-text">★★★★★</p>
-                            <p class="card-text">"Discovering Iceland with TravelEase was an epic adventure! They
-                                handled all our arrangements flawlessly, from the Northern Lights tours to the
-                                geothermal spas. We had a spectacular time and appreciated their excellent service
-                                throughout."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center card-background">
-                            <h4 class="card-title">Benjamin Choi</h4>
-                            <p class="card-text">★★★★★</p>
-                            <p class="card-text">"Thanks to TravelEase, our Greek escapade was phenomenal! They arranged
-                                our visits to ancient sites and beautiful beaches seamlessly. Their planning and
-                                coordination were perfect. We look forward to more travels with TravelEase!"</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="card">
-                        <div class="card-body text-center card-background">
-                            <h4 class="card-title">Natalie Porter</h4>
-                            <p class="card-text">★★★★★</p>
-                            <p class="card-text">"Our cultural exploration of Spain with TravelEase was outstanding.
-                                They organized everything from wine tastings to flamenco shows with such ease. The trip
-                                was hassle-free and packed with fun activities, thanks to their expertise."</p>
-                        </div>
-                    </div>
+                <div class="col-sm-12">
+                    <h6 class="uppercase general-sub">Follow Us</h6>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brand fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                                <span class="sr-only">Tiktok</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+
+
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span class="sr-only">Github</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-youtube-square" aria-hidden="true"></i>
+                                <span class="sr-only">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            </div>   
-            </div>
-        </section>
+        </footer>
     </body>
-    <footer class="container-fluid text-center py-3 footer-background">
-        <div class="row">
-            <div class="col-sm-12">
-                <h6 class="uppercase general-sub">Follow Us</h6>
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-                            <span class="sr-only">Tiktok</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-github" aria-hidden="true"></i>
-                            <span class="sr-only">Github</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-youtube-square" aria-hidden="true"></i>
-                            <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    </footer>
-</div>
 
 </html>

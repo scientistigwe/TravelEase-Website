@@ -22,283 +22,295 @@
     <!-- Custom CSS link -->
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<div class="structure-wrapper">
+
 <body>
-    <!-- HEADER -->
-    <header>
-        <section id="booking-header-id">
-            <!-- Background Image -->
-            <div class="header-section"></div>
+    <div class="structure-wrapper">
+        <!-- HEADER -->
+        <header>
+            <section id="booking-header-id">
+                <!-- Background Image -->
+                <div class="header-section"></div>
 
-            <!-- First Navigation Bar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="../templates/contact-us.html" class="nav-menu-item" alt="Link to Contact Us page">
-                            Contact Us
-                        </a>
-                    </div>
+                <!-- First Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a href="../templates/contact-us.html" class="nav-menu-item"
+                                title="Link to Contact Us page">
+                                Contact Us
+                            </a>
+                        </div>
 
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <form class="d-flex">
-                            <div class="input-group" id="search-bar">
-                                <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
-                                    aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">
-                                    <i class="fa-solid fa-magnifying-glass-location"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="../templates/booking.html" class="nav-menu-item booking active" alt="Booking page">
-                            Book Now
-                        </a>
-                    </div>
-                    <div class="nav-item dropdown nav-menu-item">
-                        <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Country
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="country-dropdown">
-                            <li><a class="dropdown-item" href="../templates/discover-places.html#ocean-beaches"
-                                    bg-dark><img src="../assets/icons/spain_flag.png" alt="Spainish flag" width="30"
-                                        height="30">
-                                    Spain</a></li>
-                            <li><a class="dropdown-item" href="../templates/discover-places.html#snowy-countryside"
-                                    bg-dark><img src="../assets/icons/iceland_flag.png" alt="Iceland flag" width="30"
-                                        height="30">
-                                    Iceland</a>
-                            </li>
-                            <li><a class="dropdown-item" href="../templates/discover-places.html#mountain-and-nature"
-                                    bg-dark><img src="../assets/icons/greece_flag.png" alt="Greece flag" width="30"
-                                        height="30">
-                                    Greece</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <hr>
-            <!-- Second Navigation Bar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items" type="button"
-                        aria-controls="menu-items" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a href="../index.html" class="navbar-brand">
-                        <img src="../assets/images/TravelEase-logo.png" width="100" height="100">
-                    </a>
-
-
-                    <div class="collapse navbar-collapse" id="menu-items">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="menu-items" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Travel Insights
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item" href="../templates/travel-time.html">Travel Time</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="../templates/travel-tips.html">Travel Tips</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../templates/reviews.html" class="nav-link" alt="Link to reviews page">
-                                    Reviews
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="menu-items" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Discover Places
-                                </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#mountain-and-nature">Mountain side &
-                                            Nature's
-                                            beauty</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#ocean-beaches">Ocean view &
-                                            Beaches</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#snowy-countryside">Snowy &
-                                            Countryside</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../templates/plan-and-pricing.html">Plan and Pricing</a>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="../templates/about.html">About</a>
-                            </li>
-                        </ul>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
-    </header>
-    <!-- MAIN CONTENT -->
-    <main>
-        <!-- Booking Form -->
-
-        <section id="form-layouts">
-            <div class="container-fluid booking-form">
-                <h2>Booking Form</h2>
-                <form class="row g-3" method="POST" action="https://formdump.codeinstitute.net/">
-                    <p>Personal Details:</p>
-                    <div class="input-group multiple-inputs">
-                        <span class="input-group-text">First and last name</span>
-                        <input type="text" aria-label="First name" class="form-control" placeholder="First name">
-                        <input type="text" aria-label="Last name" class="form-control" placeholder="Last name">
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Phone Contact</label>
-                        <input type="text" class="form-control" id="inputPassword4">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2"
-                            placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="col-md-5">
-                        <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputState" class="form-label">County</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>West Midlands</option>
-                            <option>West London</option>
-                            <option>East Midlands</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="inputPostcode" class="form-label">Postcode</label>
-                        <input type="text" class="form-control" id="inputPostcode">
-                    </div>
-
-                    <p>Destination Information:</p>
-
-                    <div class="col-md-6">
-                        <label for="inputState" class="form-label">Destination</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Choose destination</option>
-                            <option>Spain</option>
-                            <option>Greece</option>
-                            <option>Iceland
-                            </option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputState" class="form-label">Plan</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Select Plan</option>
-                            <option>Standard</option>
-                            <option>Gold</option>
-                            <option>Platinum
-                            </option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 input-group multiple-inputs">
-                        <span class="input-group-text">Departure Date</span>
-                        <input type="date" aria-label="First name" class="form-control" placeholder="Departure date">
-                    </div>
-                    <div class="col-md-6 input-group multiple-inputs">
-                        <span class="input-group-text">Arrival Date</span>
-                        <input type="date" aria-label="First name" class="form-control" placeholder="Departure date">
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Accept Terms and Conditions
-                            </label>
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <form class="d-flex">
+                                <div class="input-group" id="search-bar">
+                                    <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">
+                                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a href="../templates/booking.html" class="nav-menu-item booking active"
+                                title="Booking page">
+                                Book Now
+                            </a>
+                        </div>
+                        <div class="nav-item dropdown nav-menu-item">
+                            <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Country
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="country-dropdown">
+                                <li><a class="dropdown-item" href="../templates/discover-places.html#ocean-beaches"><img
+                                            src="../assets/icons/spain_flag.png" alt="Spanish flag" width="30"
+                                            height="30">
+                                        Spain</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./templates/discover-places.html#snowy-countryside"><img
+                                            src="../assets/icons/iceland_flag.png" alt="Iceland flag" width="30"
+                                            height="30">
+                                        Iceland</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../templates/discover-places.html#mountain-and-nature"><img
+                                            src="../assets/icons/greece_flag.png" alt="Greece flag" width="30"
+                                            height="30">
+                                        Greece</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Book now</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
+                </nav>
+                <hr>
+                <!-- Second Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items"
+                            type="button" aria-controls="menu-items" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a href="../index.html" class="navbar-brand">
+                            <img src="../assets/images/TravelEase-logo.png" alt="TravelEase Logo" width="100"
+                                height="100">
+                        </a>
 
-    <!-- FOOTER -->
+
+                        <div class="collapse navbar-collapse" id="menu-items">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menu-items" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Travel Insights
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                        <li><a class="dropdown-item" href="../templates/travel-time.html">Travel
+                                                Time</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="../templates/travel-tips.html">Travel
+                                                Tips</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../templates/reviews.html" class="nav-link" title="Link to reviews page">
+                                        Reviews
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menu-items" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Discover Places
+                                    </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#mountain-and-nature">Mountain
+                                                side &
+                                                Nature's
+                                                beauty</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#ocean-beaches">Ocean view &
+                                                Beaches</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#snowy-countryside">Snowy &
+                                                Countryside
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../templates/plan-and-pricing.html">Plan and Pricing</a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../templates/about.html">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- Booking Form -->
+
+            <section id="form-layouts">
+                <div class="container-fluid booking-form">
+                    <h2>Booking Form</h2>
+                    <form class="row g-3" method="POST" action="https://formdump.codeinstitute.net/">
+                        <p>Personal Details:</p>
+                        <div class="input-group multiple-inputs">
+                            <span class="input-group-text">First and last name</span>
+                            <input type="text" aria-label="First name" class="form-control" placeholder="First name">
+                            <input type="text" aria-label="Last name" class="form-control" placeholder="Last name">
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Phone Contact</label>
+                            <input type="text" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">County</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>West Midlands</option>
+                                <option>West London</option>
+                                <option>East Midlands</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputPostcode" class="form-label">Postcode</label>
+                            <input type="text" class="form-control" id="inputPostcode">
+                        </div>
+
+                        <p>Destination Information:</p>
+
+                        <div class="col-md-6">
+                            <label for="inputState" class="form-label">Destination</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose destination</option>
+                                <option>Spain</option>
+                                <option>Greece</option>
+                                <option>Iceland
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputState" class="form-label">Plan</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Select Plan</option>
+                                <option>Standard</option>
+                                <option>Gold</option>
+                                <option>Platinum
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 input-group multiple-inputs">
+                            <span class="input-group-text">Departure Date</span>
+                            <input type="date" aria-label="First name" class="form-control"
+                                placeholder="Departure date">
+                        </div>
+                        <div class="col-md-6 input-group multiple-inputs">
+                            <span class="input-group-text">Arrival Date</span>
+                            <input type="date" aria-label="First name" class="form-control"
+                                placeholder="Departure date">
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Accept Terms and Conditions
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Book now</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
         <footer class="container-fluid text-center py-3 footer-background">
-        <div class="row">
-            <div class="col-sm-12">
-                <h6 class="uppercase general-sub">Follow Us</h6>
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-                            <span class="sr-only">Tiktok</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-github" aria-hidden="true"></i>
-                            <span class="sr-only">Github</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fa-brands fa-youtube-square" aria-hidden="true"></i>
-                            <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6 class="uppercase general-sub">Follow Us</h6>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                                <span class="sr-only">Tiktok</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span class="sr-only">Github</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-youtube-square" aria-hidden="true"></i>
+                                <span class="sr-only">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
-</div>
+        </footer>
+    </div>
 
     <!-- Font awesome and Bootstrap Javascript link -->
     <script src="https://kit.fontawesome.com/01058b62ac.js" crossorigin="anonymous"></script>
