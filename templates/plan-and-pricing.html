@@ -23,268 +23,279 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <div class="structure-wrapper">
-<body>
-    <!-- HEADER -->
-    <header>
-        <section id="plan-header-id">
-            <!-- Background Image -->
-            <div class="header-section"></div>
-
-            <!-- First Navigation Bar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="../templates/contact-us.html" class="nav-menu-item" alt="Link to Contact Us page">
-                            Contact Us
-                        </a>
-                    </div>
-
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <form class="d-flex">
-                            <div class="input-group" id="search-bar">
-                                <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
-                                    aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">
-                                    <i class="fa-solid fa-magnifying-glass-location"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a href="../templates/booking.html" class="nav-menu-item booking" alt="Booking page">
-                            Book Now
-                        </a>
-                    </div>
-                    <div class="nav-item dropdown nav-menu-item">
-                        <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Country
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="country-dropdown">
-                            <li><a class="dropdown-item" href="../templates/discover-places.html#ocean-beaches"
-                                    bg-dark><img src="../assets/icons/spain_flag.png" alt="Spainish flag" width="30"
-                                        height="30">
-                                    Spain</a></li>
-                            <li><a class="dropdown-item" href="../templates/discover-places.html#snowy-countryside"
-                                    bg-dark><img src="../assets/icons/iceland_flag.png" alt="Iceland flag" width="30"
-                                        height="30">
-                                    Iceland</a>
-                            </li>
-                            <li><a class="dropdown-item" href="../templates/discover-places.html#mountain-and-nature"
-                                    bg-dark><img src="../assets/icons/greece_flag.png" alt="Greece flag" width="30"
-                                        height="30">
-                                    Greece</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <hr>
-            <!-- Second Navigation Bar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items" type="button"
-                        aria-controls="menu-items" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a href="../index.html" class="navbar-brand">
-                        <img src="../assets/images/TravelEase-logo.png" width="100" height="100">
-                    </a>
-
-
-                    <div class="collapse navbar-collapse" id="menu-items">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="menu-items" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Travel Insights
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item" href="../templates/travel-time.html">Travel Time</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="../templates/travel-tips.html">Travel Tips</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../templates/reviews.html" class="nav-link" alt="Link to reviews page">
-                                    Reviews
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="menu-items" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Discover Places
-                                </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="menu-items">
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#mountain-and-nature">Mountain side &
-                                            Nature's
-                                            beauty</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#ocean-beaches">Ocean view &
-                                            Beaches</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="../templates/discover-places.html#snowy-countryside">Snowy &
-                                            Countryside</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../templates/plan-and-pricing.html">Plan and Pricing</a>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="../templates/about.html">About</a>
-                            </li>
-                        </ul>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
-    </header>
-    </section>
 
     <body>
-        <header class="position-relative">
-            <div class="header-section"></div>
+        <!-- HEADER -->
+        <header>
+            <div id="pricing-header-id">
+                <!-- Background Image -->
+                <div class="header-section"></div>
 
-            <!-- Plans and Pricing Section -->
-            <section class="container">
-                <div class="row">
-                    <!-- Standard Plan -->
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card">
-                            <div class="card-header bg-success text-white">Standard Plan</div>
-                            <div class="card-body plancard-background">
-                                <h5 class="card-title">Includes the following:</h5>
-                                <ul>
-                                    <li>Maps</li>
-                                    <li>Visa Requirements Info</li>
-                                    <li>Economy Flight</li>
-                                    <li>2-star Accommodation</li>
-                                </ul>
-                                <h5 class="card-title">Locations:</h5>
-                                <ul>
-                                    <li>Spain: £379</li>
-                                    <li>Greece: £429</li>
-                                    <li>Iceland: £499</li>
-                                </ul>
+                <!-- First Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a href="../templates/contact-us.html" class="nav-menu-item"
+                                title="Link to Contact Us page">
+                                Contact Us
+                            </a>
+                        </div>
+
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <form class="d-flex">
+                                <div class="input-group" id="search-bar">
+                                    <input class="form-control ms-auto" type="search" placeholder="Search next trip..."
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">
+                                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a href="../templates/booking.html" class="nav-menu-item booking" title="Booking page">
+                                Book Now
+                            </a>
+                        </div>
+                        <div class="nav-item dropdown nav-menu-item">
+                            <a class="nav-link dropdown-toggle" id="country-dropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Country
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="country-dropdown">
+                                <li><a class="dropdown-item" href="../templates/discover-places.html#ocean-beaches"><img
+                                            src="../assets/icons/spain_flag.png" alt="Spanish flag" width="30"
+                                            height="30">
+                                        Spain</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./templates/discover-places.html#snowy-countryside"><img
+                                            src="../assets/icons/iceland_flag.png" alt="Iceland flag" width="30"
+                                            height="30">
+                                        Iceland</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="../templates/discover-places.html#mountain-and-nature"><img
+                                            src="../assets/icons/greece_flag.png" alt="Greece flag" width="30"
+                                            height="30">
+                                        Greece</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <hr>
+                <!-- Second Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-items"
+                            type="button" aria-controls="menu-items" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a href="../index.html" class="navbar-brand">
+                            <img src="../assets/images/TravelEase-logo.png" alt="TravelEase Logo" width="100"
+                                height="100">
+                        </a>
+
+
+                        <div class="collapse navbar-collapse" id="menu-items">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menu-items" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Travel Insights
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                        <li><a class="dropdown-item" href="../templates/travel-time.html">Travel
+                                                Time</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="../templates/travel-tips.html">Travel
+                                                Tips</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../templates/reviews.html" class="nav-link" title="Link to reviews page">
+                                        Reviews
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle menu-items" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Discover Places
+                                    </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="menu-items">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#mountain-and-nature">Mountain
+                                                side &
+                                                Nature's
+                                                beauty</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#ocean-beaches">Ocean view &
+                                                Beaches</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/discover-places.html#snowy-countryside">Snowy &
+                                                Countryside
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="../templates/plan-and-pricing.html">Plan and
+                                        Pricing</a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../templates/about.html">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="position-relative">
+                <div class="header-section"></div>
+
+                <!-- Plans and Pricing Section -->
+                <section class="container">
+                    <div class="row">
+                        <!-- Standard Plan -->
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="card-header bg-success text-white">Standard Plan</div>
+                                <div class="card-body plancard-background">
+                                    <h5 class="card-title">Includes the following:</h5>
+                                    <ul>
+                                        <li>Maps</li>
+                                        <li>Visa Requirements Info</li>
+                                        <li>Economy Flight</li>
+                                        <li>2-star Accommodation</li>
+                                    </ul>
+                                    <h5 class="card-title">Locations:</h5>
+                                    <ul>
+                                        <li>Spain: £379</li>
+                                        <li>Greece: £429</li>
+                                        <li>Iceland: £499</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gold Plan -->
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="card-header bg-warning text-white">Gold Plan</div>
+                                <div class="card-body plancard-background">
+                                    <h5 class="card-title">Includes everything in the Standard Plan, plus:</h5>
+                                    <ul>
+                                        <li>4-star Accommodation (with breakfast buffet)</li>
+                                        <li>Airport Pickup and Drop-off</li>
+                                        <li>Business Class Flight</li>
+                                    </ul>
+                                    <h5 class="card-title">Locations:</h5>
+                                    <ul>
+                                        <li>Spain: £629</li>
+                                        <li>Greece: £699</li>
+                                        <li>Iceland: £799</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Platinum Plan -->
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card">
+                                <div class="card-header bg-info">Platinum Package</div>
+                                <div class="card-body plancard-background">
+                                    <h5 class="card-title ">Includes everything in the Standard Plan, plus:</h5>
+                                    <ul>
+                                        <li>All-inclusive 5-star Accommodation</li>
+                                        <li>Airport Pickup and Drop-off</li>
+                                        <li>Tour Guide</li>
+                                        <li>Business Class Flight</li>
+                                        <li>Chauffeurs</li>
+                                        <li>Travel Insurance</li>
+                                    </ul>
+                                    <h5 class="card-title">Locations:</h5>
+                                    <ul>
+                                        <li>Spain: £1049</li>
+                                        <li>Greece: £1049</li>
+                                        <li>Iceland: £1199</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Gold Plan -->
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card">
-                            <div class="card-header bg-warning text-white">Gold Plan</div>
-                            <div class="card-body plancard-background">
-                                <h5 class="card-title">Includes everything in the Standard Plan, plus:</h5>
-                                <ul>
-                                    <li>4-star Accommodation (with breakfast buffet)</li>
-                                    <li>Airport Pickup and Drop-off</li>
-                                    <li>Business Class Flight</li>
-                                </ul>
-                                <h5 class="card-title">Locations:</h5>
-                                <ul>
-                                    <li>Spain: £629</li>
-                                    <li>Greece: £699</li>
-                                    <li>Iceland: £799</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Platinum Plan -->
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card">
-                            <div class="card-header bg-info">Platinum Package</div>
-                            <div class="card-body plancard-background">
-                                <h5 class="card-title ">Includes everything in the Standard Plan, plus:</h5>
-                                <ul>
-                                    <li>All-inclusive 5-star Accommodation</li>
-                                    <li>Airport Pickup and Drop-off</li>
-                                    <li>Tour Guide</li>
-                                    <li>Business Class Flight</li>
-                                    <li>Chauffeurs</li>
-                                    <li>Travel Insurance</li>
-                                </ul>
-                                <h5 class="card-title">Locations:</h5>
-                                <ul>
-                                    <li>Spain: £1049</li>
-                                    <li>Greece: £1049</li>
-                                    <li>Iceland: £1199</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid text-center py-3 footer-background">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6 class="uppercase general-sub">Follow Us</h6>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                                <span class="sr-only">Tiktok</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span class="sr-only">Github</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa-brands fa-youtube-square" aria-hidden="true"></i>
+                                <span class="sr-only">YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-
-            <!-- FOOTER -->
-            <footer class="container-fluid text-center py-3 footer-background">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h6 class="uppercase general-sub">Follow Us</h6>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a target="_blank" href="#">
-                                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-                                    <span class="sr-only">Facebook</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a target="_blank" href="#">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    <span class="sr-only">Twitter</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a target="_blank" href="#">
-                                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                                    <span class="sr-only">LinkedIn</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a target="_blank" href="#">
-                                    <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-                                    <span class="sr-only">Tiktok</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a target="_blank" href="#">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    <span class="sr-only">Instagram</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a target="_blank" href="#">
-                                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                                    <span class="sr-only">Github</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a target="_blank" href="#">
-                                    <i class="fa-brands fa-youtube-square" aria-hidden="true"></i>
-                                    <span class="sr-only">YouTube</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
+</div>
 
 
-            <!-- Font awesome and Bootstrap Javascript link -->
-            <script src="https://kit.fontawesome.com/01058b62ac.js" crossorigin="anonymous"></script>
+<!-- Font awesome and Bootstrap Javascript link -->
+<script src="https://kit.fontawesome.com/01058b62ac.js" crossorigin="anonymous"></script>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous"></script>
-    </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>
