@@ -278,13 +278,18 @@ padding: 10px;
 }
 /* Footer */
 
+.list-inline-item {
+    font-size: 150%;
+}
 
 .footer-background {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
 .structure-wrap {
-    padding-bottom: 100px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .social-links {
@@ -315,7 +320,7 @@ padding: 10px;
     margin-top: 12%;
     margin-bottom: 20%;
     margin-left: 2%;
-margin-right: 2%
+    margin-right: 2%;
 }
 
 #footer-details {
@@ -368,8 +373,8 @@ margin-bottom: 10px;
 }
 
 #contact-us>p {
-font-weight: bold
-;}
+    font-weight: bold;
+}
 
 .text-input {
     background: transparent;
