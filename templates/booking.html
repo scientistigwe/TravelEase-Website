@@ -24,7 +24,7 @@
 <body>
     <!-- HEADER -->
     <header>
-        <section id="header-id">
+        <section id="booking-header-id">
             <!-- Background Image -->
             <div class="header-section"></div>
 
@@ -153,25 +153,22 @@
         <section id="form-layouts">
             <div class="container-fluid booking-form">
                 <h2>Booking Form</h2>
-                <form class="row g-3">
+                <form class="row g-3" method="POST" action="https://formdump.codeinstitute.net/">
+                    <p>Personal Details:</p>
                     <div class="input-group multiple-inputs">
                         <span class="input-group-text">First and last name</span>
                         <input type="text" aria-label="First name" class="form-control" placeholder="First name">
                         <input type="text" aria-label="Last name" class="form-control" placeholder="Last name">
                     </div>
 
-                    <div class="input-group multiple-inputs">
-                        <span class="input-group-text">£</span>
-                        <input type="number" aria-label="First name" class="form-control" placeholder="Price"
-                            step="0.0001">
-                    </div>
+
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Email</label>
                         <input type="email" class="form-control" id="inputEmail4">
                     </div>
                     <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                        <label for="inputPassword4" class="form-label">Phone Contact</label>
+                        <input type="text" class="form-control" id="inputPassword4">
                     </div>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">Address</label>
@@ -182,7 +179,7 @@
                         <input type="text" class="form-control" id="inputAddress2"
                             placeholder="Apartment, studio, or floor">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <label for="inputCity" class="form-label">City</label>
                         <input type="text" class="form-control" id="inputCity">
                     </div>
@@ -195,20 +192,52 @@
                             <option>East Midlands</option>
                         </select>
                     </div>
-                    <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
+                    <div class="col-md-3">
+                        <label for="inputPostcode" class="form-label">Postcode</label>
+                        <input type="text" class="form-control" id="inputPostcode">
                     </div>
+
+                    <p>Destination Information:</p>
+
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Destination</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose destination</option>
+                            <option>Spain</option>
+                            <option>Greece</option>
+                            <option>Iceland
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Plan</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Select Plan</option>
+                            <option>Standard</option>
+                            <option>Gold</option>
+                            <option>Platinum
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 input-group multiple-inputs">
+                        <span class="input-group-text">Departure Date</span>
+                        <input type="date" aria-label="First name" class="form-control" placeholder="Departure date">
+                    </div>
+                    <div class="col-md-6 input-group multiple-inputs">
+                        <span class="input-group-text">Arrival Date</span>
+                        <input type="date" aria-label="First name" class="form-control" placeholder="Departure date">
+                    </div>
+
                     <div class="col-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="gridCheck">
                             <label class="form-check-label" for="gridCheck">
-                                Check me out
+                                Accept Terms and Conditions
                             </label>
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn btn-primary">Book now</button>
                     </div>
                 </form>
             </div>
