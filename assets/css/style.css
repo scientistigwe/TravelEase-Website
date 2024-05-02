@@ -114,13 +114,13 @@ html, body{
     color: #000;
     text-decoration: none;
 }
-.dropdown-item, #menu-items{
+.dropdown-item, #menu-items, .menu-items{
     font-size: 1.05em;
     font-weight: 400;
     color:#001F3F
 }
 
-.dropdown-item:hover, #menu-items:hover{
+.dropdown-item:hover, #menu-items:hover, .menu-items:hover{
     font-size: 1.10em;
     font-weight: 600;
     color:#000;
