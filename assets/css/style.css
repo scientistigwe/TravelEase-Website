@@ -149,16 +149,16 @@ transform: scale(1.1)
 
 @keyframes slideBackground {
     0% {
-        background-image: url("/assets/images/sky2.jpg");
+        background-image: url("../images/sky2.jpg");
     }
     33.33% {
-        background-image: url("/assets/images/sky.jpg");
+        background-image: url("../images/sky.jpg");
     }
     66.66% {
-        background-image: url("/assets/images/sky3.jpg");
+        background-image: url("../images/sky3.jpg");
     }
     100% {
-        background-image: url("/assets/images/sky2.jpg");
+        background-image: url("../images/sky2.jpg");
     }
 }
 
@@ -261,7 +261,21 @@ animation: heartbeat 2s ease;
 .card-details{
     transform: rotateY(180deg);
 }
-
+.team-details h2, .team-details p {
+background-color: rgba(143, 140, 140, 0.9);
+}
+.team-details h2 {
+    font-size: 2em;
+font-weight: 500;
+text-align: center;
+color: #373dec;
+text-decoration: none;
+    }
+.team-details p {
+font-size: 1.3em;
+font-weight: 300;
+padding-left: 10px;
+}
 /* Footer */
 
 .social-links {
@@ -303,100 +317,88 @@ margin-right: 2%
 ** BOOKING PAGE **
 *****/
 .booking-form{
-    width: 60vw;
+    width: 50vw;
     margin: auto;
 }
 
 .booking-form h2{
     text-align: center;
     text-transform: uppercase;
-    margin-top: 50px;
     margin-bottom: 40px;
 }
 
 .form-label{
     font-size: 1.2em;
+    font-weight: 500;
 }
 
+#form-layouts{
+    background-color: rgba(88, 86, 60, 0.7);
+    background-size: cover;
+}
+#form-layouts button{
+margin-bottom: 10px;
+}
+.booking-form p{
+    font-size: 2em;
+}
 /*****
 ** CONTACT US PAGE **
 *****/
 /* Form */
-
 #contact-us {
-
-    background-image: url("../images/air-plane-flight-route-with-start-point.jpg") hidden;
-
-    background-size: cover;
-
-    background-position: 75%;
-
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px 50;
     padding: 20px 10% 0 10%;
-
     flex-grow: 1;
 }
 
-#contact-us {
-
-    color: #383131;
-
-    background-color: rgba(60, 60, 60, 0.6);
-
-    padding: 30px 50;
-}
-
-#contact-us>h5 {
-
-    color: #0c0c0c;
-
+#contact-us>h1 {
+    color: #fafafa;
     margin-bottom: 20px;
-
 }
+
+#contact-us>p {
+font-weight: bold
+;}
 
 .text-input {
-
     background: transparent;
-
     color: #fafafa;
-
     width: 100%;
-
     height: 25px;
-
     margin: 5px 0 20px 0;
-
     border: 1px solid #fafafa;
-
     border-radius: 2px;
-
     padding: 0 5px;
-
 }
-
-
 
 .join-button {
-
     margin-top: 20px;
-
-    border-radius: 2px;
-
-    padding: 15px 32px;
-
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
     font-size: 100%;
-
     background-color: #78787a;
-
     color: #fafafa;
-
 }
 
+#contact-us label{
+    font-size: 1.5em;
+    color: #fafafa;
+}
 
 /*****
 ** ABOUT PAGE **
 *****/
+
+.about-card{
+    background-color: hsla(210, 1%, 30%, 1);
+}
 #about-us {
-    padding: 50px 040px; 
+    padding: 50px 40px;
+    max-width: 60%;
+    margin:auto;
   }
   
   /* Style the heading */
@@ -404,21 +406,20 @@ margin-right: 2%
 
   #about-us h2 {
     font-size: 28px; 
-    margin-bottom: 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: #000;
   }
   /* Style the paragraphs */
   #about-us p {
-    font-size: 16px; 
-    line-height: 1.6; 
-    margin-bottom: 20px; 
+    font-size: 20px; 
+    line-height: 1.8; 
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600;
   }
-  
-  /* Style the mission heading */
-  #about-us h3 {
-    font-size: 22px; 
-    margin-bottom: 10px; 
-  }
-
 
 
 /*****
@@ -441,9 +442,6 @@ margin-right: 2%
 #active-slide-indicator span.active{
     background-color: #000;
 }
-
-
-
 
 /*****
 ** PLAN AND PRICING PAGE **
