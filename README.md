@@ -111,7 +111,7 @@ This section contains summary information about the project, the user expections
 <p align="center"><a href="https://scientistigwe.github.io/TravelEase-Website/">TravelEase Homepage</a></p>
 
 <a href="https://github.com/scientistigwe/README-Template">
-<img src="./assets/images/screenshot.png" alt="Product Screenshot" width="600" height="600">
+<img src="./assets/images/Screenshot (113).png" alt="TravelEase Website Screenshot" width="600" height="400">
 </a>
 
 <h2 id="ux">User Experience (UX)</h2>
@@ -141,7 +141,7 @@ Click the link to visit the site: [TravelEase Website](https://scientistigwe.git
 
 <h2 id="technology-stack">Technology Stack</h2>
 
-This subsection outlines the technologies, frameworks, libraries, and tools used in the development of this project. It provides insight into the foundational components that powers TravelEase. Add-ons ad plugins are captured in the acknowledgements subsection (N/B: below are dummy samples. Replace with the actual project frameworks and libraries).
+This subsection outlines the technologies, frameworks, libraries, and tools used in the development of this project. It provides insight into the foundational components that powers TravelEase.
 
 <h2 id="languages-frameworks-libraries">Languages, Frameworks and Libraries</h2>
 
@@ -152,8 +152,6 @@ This subsection outlines the technologies, frameworks, libraries, and tools used
 - <img src="./assets/icons/Google.png" width="20px" align="top"><a href="https://fonts.google.com/"> Google Fonts</a> - Provides all of the fonts for this website.
 
 - <img src="./assets/icons/font_awesome.png" width="20px" align="top"><a href="https://fontawesome.com/"> Font Awesome</a> - Used for the site icons.
-
-- <img src="./assets/icons/javascript.png" width="20px" align="top"><a href="https://en.wikipedia.org/wiki/JavaScript"> JavaScript</a> - Used for the hamburger navigation and icons.
 
 - <img src="./assets/icons/github.png" width="20px" align="top"><a href="https://github.com/IrisSmok"> Github</a> - Used to store the project code.
 
@@ -173,34 +171,30 @@ This subsection outlines the technologies, frameworks, libraries, and tools used
 
 - <img src="./assets/icons/bootstrap.png" width="20px" align="top"><a href="[Bootstrap-url]"> Bootstrap</a> - Used for building responsive and mobile-first websites and web applications.
 
-- <img src="./assets/icons/jquery.png" width="20px" align="top"><a href="[JQuery-url]"> jQuery</a> - Used for simplifying HTML document traversing, event handling, and animation.
-
 <h2 id="management-and-development">Project Management and Development Approach</h2>
 
 This project was implemented using the Agile Manifesto methodology. Below are the ways this project adhered to the 4 core values and 12 core principles of the aforementioned method:
 
 <strong>Four Values of the Agile Manifesto:</strong>
 
-- Vision 1: Customer collaboration over contract negotiation: **[Sample description]** The Team held [**number of meetings**] planning sessions via **Zoom, Google Meet, or Microsoft Teams**, ensuring alignment with customer needs and prioritizing features through user story mapping.
-- **a screenshot or graphic representation of a Zoom meeting with team members.**
+- Vision 1: Customer collaboration over contract negotiation: The Team held **16** Hurdles through **Slack Platform**, ensuring alignment with user needs and prioritizing features through user story mapping.
 
-- Vision 2: Responding to change over following a plan: **[Sample description]**: Throughout the project, the team managed (
+**a screenshot or graphic representation of a Zoom meeting with team members.**
+
+- Vision 2: Responding to change over following a plan: Throughout the project, the team managed (
   [![GitHub issues](https://img.shields.io/github/issues-closed/scientistigwe/TravelEase-Website?)](https://github.com/scientistigwe/TravelEase-Website/issues) + [![GitHub issues](https://img.shields.io/github/issues/scientistigwe/TravelEase-Website?)](https://github.com/scientistigwe/TravelEase-Website/issues) ) GitHub issues, adapting to changing requirements and feedback iteratively.
-  **A screenshot of the GitHub project board demonstrates their flexibility.**
 
-- Vision 3: Working software over comprehensive documentation: **[Sample description]** Achieved **[number of story points]** across **[number of sprints]**, emphasizing the focus on delivering functional software increments.
-- **A snapshot of the scrum/kanban board tracks their progress.**
+- Vision 3: Working software over comprehensive documentation: We achieved **20 story points** across **1 sprints**, emphasizing the focus on delivering functional software increments.
 
-- Vision 4: Individuals and interactions over processes and tools
-  Description: Daily interactions on GitHub led to **[number of commits]**, fostering collaboration and knowledge sharing among team members.
+- Vision 4: Individuals and interactions over processes and tools: Daily interactions on GitHub led to **89 commits**, fostering collaboration and knowledge sharing among team members.
 - **A snapshot of GitHub issue discussions illustrates their collaborative environment.**
 
 <strong>Twelve Principles of the Agile Manifesto</strong>
 
-- Satisfy the customer: Held regular stakeholder meetings to ensure alignment with customer needs.
+- Satisfy the customer: Held regular meetings to ensure alignment with user stories.
 - Deliver working software: Prioritized delivering functional increments in each sprint, allowing for early feedback.
 - Welcome changing requirements: Maintained open communication channels and adapted plans iteratively.
-- Collaborate daily: Conducted **(frequency of standup) stand-up** meetings to facilitate collaboration and problem-solving.
+- Collaborate daily: Conducted daily standup, catchup and stand-down to facilitate collaboration and problem-solving.
 - Face-to-face conversation: Utilized **in-person and/or virtual meetings (select one or all the options)** to enhance clarity and understanding.
 - Motivated individuals: Empowered team members through skill development and recognition.
 - Measure progress through working product: Evaluated progress based on delivered functionality in each sprint.
@@ -218,34 +212,19 @@ This project was implemented using the Agile Manifesto methodology. Below are th
 
 <h1 id="project-setup">SECTION 2: PROJECT SETUP</h1>
 
-In this section, a detailed account of all requirements needed for "**name-of-project**" to be setup and running. It also includes installation instructions and a link to all necessary documentations for these tools.
+In this section, a detailed account of all requirements needed for TravelEase to be setup and running. It also includes installation instructions and a link to all necessary documentations for these tools.
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-Below are the list of softwares required to setup and start using "**name-of-project**" (N/B: if no installation is required. Then write: "**name-of-project**" does not rely on any external dependencies or services.):
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
-- etc
+TravelEase does not rely on any external dependencies or services.
 
 <h2 id="installation">Installation</h2>
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+<p align="center">Clone the repo:</p>
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
+   git clone https://github.com/scientistigwe/TravelEase-Website.git
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -325,7 +304,6 @@ The key features are:
 <p align="center">
 <img src="./assets/wireframes/index wireframe.PNG" width="800" height="700">
 </p>
-
 
 ### _Mobile View - Home Page_
 
