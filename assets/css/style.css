@@ -278,6 +278,16 @@ padding-left: 10px;
 }
 /* Footer */
 
+
+.footer-background {
+    background-color: rgba(255, 255, 255, 0.6);
+    width:
+}
+
+.structure-wrap {
+    padding-bottom: 100px;
+}
+
 .social-links {
     padding-bottom: 20px;
 }
