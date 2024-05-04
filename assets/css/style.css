@@ -317,8 +317,8 @@ padding: 10px;
 }
 
 #team{
-    margin-top: 12%;
-    margin-bottom: 20%;
+    margin-top: 8%;
+    margin-bottom: 15%;
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -538,13 +538,3 @@ margin-bottom: 10px;
         top: 300px;
     }
 }
-
-
-/*Work in progress, planning on improving the experience on larger screens
-
-@media (width >= 1080px) {
-    #reviewCarousel {
-        width: 100%;
-    }
-}
-*/
