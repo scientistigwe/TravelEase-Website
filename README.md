@@ -486,7 +486,7 @@ Use this space to list individuals, groups or resources you find helpful and wou
 
 <h2 id="contact">Contact</h2>
 
-- Chibueze C. Igwe - [Email Address](scientistigwe@gmail.com); [Profile link](https://scientistigwe.github.io/my-name-is-CHIBUEZE-C.-IGWE/)
+- Chibueze C. Igwe - [Email Address](scientistigwe@gmail.com); [Profile link](https://scientistigwe.github.io/Personal-Profile/)
 
 - Andy Ancans - [Email Address](scientistigwe@gmail.com); [Profile link](https://scientistigwe.github.io/my-name-is-CHIBUEZE-C.-IGWE/)
 
