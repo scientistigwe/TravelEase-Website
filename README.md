@@ -24,7 +24,7 @@
   <h1 align="center">TravelEase</h1>
 
   <p align="center">
-This documentation is a detailed step by step breakdown of the planning, design, development, test & validation, and deployment of TravelEase Website.
+This documentation is a detailed step by step breakdown of the planning, design, development, testing & validation, and deployment of TravelEase Website.
     <br />
     <br />
     <a href="https://github.com/scientistigwe/TravelEase-Website/blob/main/README.md"><strong>Explore the docs »</strong></a>
